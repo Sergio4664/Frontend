@@ -1,284 +1,322 @@
+/* Definición de variables globales de colores y tipografía */
 :root {
-    --oscuro: #07070A;
-    --azulOscuro: #0A1128;
-    --azulClaro: #006FE6;
-    --blanco: #FEFCFB;
-    --gris: #bec3c3;
-    --rojo: #c9484d;
-    --titulos: 'Josefin Sans', serif;
-    --parrafos: 'Monserrat', sans-serif;
+    --oscuro: #07070A; /* Color oscuro */
+    --azulOscuro: #0A1128; /* Color azul oscuro */
+    --azulClaro: #006FE6; /* Color azul claro */
+    --blanco: #FEFCFB; /* Color blanco */
+    --gris: #bec3c3; /* Color gris */
+    --rojo: #c9484d; /* Color rojo */
+    --titulos: 'Josefin Sans', serif; /* Tipografía para títulos */
+    --parrafos: 'Monserrat', sans-serif; /* Tipografía para párrafos */
 }
 
-/* General Styles */
+/* Estilos generales del cuerpo */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--blanco);
-    color: #333;
+    font-family: 'Arial', sans-serif; /* Fuente del texto del cuerpo */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+    background-color: var(--blanco); /* Establece el fondo blanco */
+    color: #333; /* Color del texto en gris oscuro */
 }
 
+/* Estilos generales del contenedor principal */
 .container {
-    margin: 0 auto;
-    max-width: 120rem;
-    width: 95%;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 120rem; /* Establece el ancho máximo del contenedor */
+    width: 95%; /* Establece el ancho relativo al contenedor padre */
 }
 
+/* Estilos para los enlaces */
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    color: inherit; /* Hereda el color del elemento contenedor */
 }
 
+/* Estilos para los encabezados h1 y h2 */
 h1, h2 {
-    font-family: 'Arial', sans-serif;
-    color: #333;
+    font-family: 'Arial', sans-serif; /* Fuente para h1 y h2 */
+    color: #333; /* Color de texto para h1 y h2 */
 }
 
-/* Header Styles */
+/* Estilos del header */
+
 /* Contenedor principal del header */
 .header {
-    background-color: #222;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
-    text-align: center;
-    /* No necesitas position: relative aquí si no vas a posicionar de forma absoluta */
-  }
-  
-  /* Contenedor para el logo */
-  .header-top {
-    padding: 20px 0;
-  }
-  
-  .header-top a {
-    display: inline-block;
-  }
-  
-  .header-top img {
-    height: 63px;
-    width: auto;
-  }
-  
-  /* Contenedor para la navegación */
-  .header-bottom {
-    background-color: #272727;
-    padding: 10px 0;
-  }
-  
-  .navigation ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navigation li {
-    margin: 0 10px;
-  }
-  
-  .navigation a {
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-  }  
-  
-/*----------------------------------------------------------------------------------------------------------------------------------------*/
-/* Presentación */
+    background-color: #222; /* Fondo oscuro para el header */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7); /* Sombra en el header */
+    text-align: center; /* Centra el texto en el header */
+}
+
+/* Contenedor para el logo */
+.header-top {
+    padding: 20px 0; /* Añade espacio arriba y abajo en el contenedor del logo */
+}
+
+/* Enlace dentro de header-top */
+.header-top a {
+    display: inline-block; /* Hace que el enlace se comporte como bloque */
+}
+
+/* Estilo para la imagen del logo */
+.header-top img {
+    height: 63px; /* Establece la altura del logo */
+    width: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Estilos para la parte inferior del header */
+
+/* Contenedor de la navegación */
+.header-bottom {
+    background-color: #272727; /* Fondo más oscuro para la parte inferior */
+    padding: 10px 0; /* Espaciado en la parte superior e inferior */
+}
+
+/* Estilo de la lista de navegación */
+.navigation ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    display: flex; /* Muestra los elementos en una fila */
+    justify-content: center; /* Centra los elementos en la fila */
+}
+
+/* Estilo de cada elemento de la lista */
+.navigation li {
+    margin: 0 10px; /* Añade margen a la izquierda y derecha de los elementos */
+}
+
+/* Estilo de los enlaces dentro de la navegación */
+.navigation a {
+    font-size: 18px; /* Tamaño de fuente de los enlaces */
+    font-weight: bold; /* Establece el texto en negrita */
+    color: #fff; /* Color blanco para el texto del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Estilos para la sección de presentación */
+
+/* Estilo para la portada */
 .present-cover {
-    background-image: url('../img/bio2.jpg');
-    background-repeat: no-repeat;
-    height: 401.72px;
-    min-height: 600px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 1;
+    background-image: url('../img/bio2.jpg'); /* Imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 401.72px; /* Establece una altura fija */
+    min-height: 600px; /* Establece una altura mínima */
+    background-size: cover; /* Hace que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen de fondo */
+    position: relative; /* Establece posición relativa para el contenido posterior */
+    z-index: 1; /* Establece la prioridad en la pila de capas */
 }
 
 /* Capa semitransparente sobre la imagen */
 .present-cover::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
-    z-index: -1; /* Lo coloca detrás del contenido */
+    content: ''; /* Crea una capa vacía */
+    position: absolute; /* Posiciona la capa de forma absoluta */
+    top: 0; left: 0; right: 0; bottom: 0; /* Ocupa todo el contenedor */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    z-index: -1; /* Coloca la capa detrás del contenido */
 }
 
-/* Contenido del encabezado */
+/* Estilo para el contenido del encabezado */
 .present-content {
-    padding: 50px 0;
-    text-align: center;
-    display: flex;
-    justify-content: flex-start;  /* Alinea hacía la izquierda */
-    align-items: center;          /* Centra verticalmente */
-    width: 100%;
+    padding: 50px 0; /* Espaciado en la parte superior e inferior */
+    text-align: center; /* Centra el texto */
+    display: flex; /* Usa flexbox para el contenido */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 100%; /* Ocupa el 100% del contenedor */
 }
 
+/* Estilo para el título en la sección de presentación */
 .present-content h1 {
-    font-size: 3rem;
-    color: var(--blanco);
-    text-align: left;
-    padding-top: 0;
-    width: 50%;  /* Limita el ancho a la mitad de la pantalla */
-    margin: 30px;
+    font-size: 3rem; /* Tamaño de la fuente del título */
+    color: var(--blanco); /* Color blanco para el título */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding-top: 0; /* Elimina el relleno superior */
+    width: 50%; /* Limita el ancho del título */
+    margin: 30px; /* Añade margen alrededor */
 }
 
+/* Estilos para pantallas pequeñas */
 @media(max-width: 768px) {
     .present-content h1 {
-        font-size: 20px;
-        margin-top: 300px;
-        line-height: 26px;
-        text-align: left;
+        font-size: 20px; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+        margin-top: 300px; /* Añade un margen superior */
+        line-height: 26px; /* Ajusta la altura de línea */
+        text-align: left; /* Alinea el texto a la izquierda */
     }
 }
 
-/*----------------------------------------------------------------------------------------------------------------------------------------*/
-/* Bibliografía */
+/* Estilos para la sección de bibliografía */
+
+/* Contenedor principal de la bibliografía */
 .contabio {
-    margin-left: 18%;
-    margin-right: 18%;
-    position: relative;
-    padding-bottom: 4%;
+    margin-left: 18%; /* Añade margen izquierdo */
+    margin-right: 18%; /* Añade margen derecho */
+    position: relative; /* Posición relativa para contener otros elementos */
+    padding-bottom: 4%; /* Espaciado en la parte inferior */
 }
+
+/* Añade una capa vacía antes del contenido */
 .contabio::before {
-    content: "";
-    display: table;
+    content: ""; /* Crea una capa vacía */
+    display: table; /* Muestra como tabla */
 }
 
+/* Estilo para el logo en la bibliografía */
 .logobio {
-    width: 100%;
+    width: 100%; /* Establece el ancho completo */
 }
 
+/* Estilos para los párrafos dentro de la biografía */
 .biography-cover p {
-    font-size: 1.5rem;
-    color: var(--oscuro);
-    text-align: left;
-    width: 100%;
-    margin: 30px 0;
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    color: var(--oscuro); /* Color oscuro para el texto */
+    text-align: left; /* Alinea el texto a la izquierda */
+    width: 100%; /* El texto ocupa el 100% del ancho */
+    margin: 30px 0; /* Añade margen arriba y abajo */
 }
 
+/* Estilo para el botón en la bibliografía */
 .botonbio button {
-    background-color: var(--rojo);
-    color: var(--blanco);
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    cursor: pointer;
+    background-color: var(--rojo); /* Color de fondo rojo */
+    color: var(--blanco); /* Color del texto blanco */
+    border: none; /* Elimina el borde */
+    border-radius: 50px; /* Hace el borde redondeado */
+    padding: 10px 20px; /* Añade relleno dentro del botón */
+    cursor: pointer; /* Cambia el cursor cuando se pasa por encima */
 }
 
+/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     .biography-cover p {
-        font-size: 1rem;
-        margin: 15px 0;
-        line-height: 1.5;
-        text-align: left;
+        font-size: 1rem; /* Ajusta el tamaño de fuente */
+        margin: 15px 0; /* Ajusta los márgenes */
+        line-height: 1.5; /* Ajusta la altura de línea */
+        text-align: left; /* Alinea el texto a la izquierda */
     }
 }
 
-/*----------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estilos para la sección de discografía */
+
+/* Estilo general para el contenedor de discografía */
 .discografia {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    box-sizing: inherit;
+    padding-right: 15px; /* Espaciado a la derecha */
+    padding-left: 15px; /* Espaciado a la izquierda */
+    margin-left: auto; /* Centra el contenedor */
+    margin-right: auto; /* Centra el contenedor */
+    display: block; /* Se muestra como bloque */
+    box-sizing: inherit; /* Asegura que el padding no afecte el tamaño total */
 }
+
+/* Añade una capa vacía después de los elementos */
 .discografia::after {
-    content: "";
-    display: table;
-    box-sizing: inherit;
+    content: ""; /* Crea una capa vacía */
+    display: table; /* Muestra como tabla */
+    box-sizing: inherit; /* Asegura que el padding no afecte el tamaño total */
 }
+
+/* Contenedor de los discos */
 .discocont {
-    margin-right: -15px;
-    margin-left: -15px;
-    display: flex;
-    flex-wrap: wrap;
+    margin-right: -15px; /* Ajusta los márgenes */
+    margin-left: -15px; /* Ajusta los márgenes */
+    display: flex; /* Usa flexbox para organizar los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
 }
-.discocont::before {
-    box-sizing: inherit;
-}
+
+/* Estilo para las imágenes de los discos */
 .logodisco {
-    height: 472px;
-    width: 50%;
-    object-fit: cover;
-    display: block;   
+    height: 472px; /* Establece la altura de la imagen */
+    width: 50%; /* Establece el ancho de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área */
+    display: block; /* Muestra la imagen como bloque */
 }
+
+/* Estilo para el contenedor de cada disco */
 .discolet {
-    background-color: var(--gris);
-    max-width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--gris); /* Fondo gris para cada disco */
+    max-width: 50%; /* Establece el ancho máximo del disco */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
 }
+
+/* Estilos para el segundo contenedor de disco */
 .discolet2 {
-    margin-left: 15px;
-    margin-right: 5px;
-    padding-left: 8px;
-    padding-right: 2px;
-    padding-bottom: 5%;
+    margin-left: 15px; /* Añade margen a la izquierda */
+    margin-right: 5px; /* Añade margen a la derecha */
+    padding-left: 8px; /* Añade relleno a la izquierda */
+    padding-right: 2px; /* Añade relleno a la derecha */
+    padding-bottom: 5%; /* Añade relleno en la parte inferior */
 }
-.discolet2 p{
-    font-size: 18px;
-    line-height: 25px;
+
+/* Estilo para los párrafos dentro de discolet2 */
+.discolet2 p {
+    font-size: 18px; /* Tamaño de la fuente */
+    line-height: 25px; /* Altura de la línea */
 }
+
+/* Estilo para el botón dentro de la discografía */
 .botondisco button {
-    background-color: var(--rojo);
-    color: var(--blanco);
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    cursor: pointer;
+    background-color: var(--rojo); /* Fondo rojo */
+    color: var(--blanco); /* Texto blanco */
+    border: none; /* Elimina el borde */
+    border-radius: 50px; /* Borde redondeado */
+    padding: 10px 20px; /* Añade relleno al botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
+
+/* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 768px) {
     .discocont {
-      flex-direction: column;
+      flex-direction: column; /* Organiza los discos en columna */
     }
     
     .logodisco {
-      width: 100%;
-      height: auto;
+      width: 100%; /* Establece el ancho de la imagen al 100% */
+      height: auto; /* Ajusta la altura de manera proporcional */
     }
     
     .discolet {
-      max-width: 100%;
-      width: 100%;
+      max-width: 100%; /* Establece el ancho máximo al 100% */
+      width: 100%; /* Establece el ancho al 100% */
     }
     
     .discolet2 {
-      padding: 15px; /* Ajusta el padding para dispositivos móviles */
+      padding: 15px; /* Ajusta el relleno en pantallas pequeñas */
     }
     
     .discografia {
-      padding: 15px; /* Asegura un espacio adecuado en pantallas pequeñas */
+      padding: 15px; /* Añade relleno en pantallas pequeñas */
     }
-  }
-/*----------------------------------------------------------------------------------------------------------------------------------------*/
-/* Social Media */
+}
+
+/* Estilos para los iconos de redes sociales */
+
+/* Estilo para la lista de redes sociales */
 .social-media ul {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    list-style: none;
+    display: flex; /* Muestra los elementos en fila */
+    justify-content: center; /* Centra los elementos */
+    padding: 20px 0; /* Añade relleno en la parte superior e inferior */
+    list-style: none; /* Elimina los puntos de lista */
 }
 
+/* Estilo para cada ítem de la lista de redes sociales */
 .social-media li {
-    margin: 0 15px;
+    margin: 0 15px; /* Añade margen a la izquierda y derecha */
 }
 
+/* Estilo para los iconos dentro de la lista de redes sociales */
 .social-media i {
-    font-size: 30px;
-    color: #333;
+    font-size: 30px; /* Tamaño del icono */
+    color: #333; /* Color del icono */
 }
 
-/* Footer */
+/* Estilos para el pie de página */
+
+/* Estilo del pie de página */
 footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background-color: #222; /* Fondo oscuro para el pie */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Añade relleno */
 }
