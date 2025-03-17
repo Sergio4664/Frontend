@@ -1,0 +1,249 @@
+body {
+    background-color: rgb(125, 122, 122);
+    margin: 10px auto;
+    width: 70%;
+    font-family: "Roboto";
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ececec;
+    margin-bottom: 0px;
+    padding: 0px;
+    border-radius: 25px 25px 0px 0px;
+    border-style: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        border-radius: 0px;
+    }
+}
+
+/* HEADER - TITULOS */
+header > div > h1, h2 {
+    font-family: "Roboto";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 20px 0px 70px;
+}
+
+/* HEADER - PARRAFO */
+header > div > p {
+    font-family: "Roboto";
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    margin: 0px 20px 0px 70px;
+    line-height: 1.5;
+}
+
+/* CONTENEDORES IZQUIERDA Y DERECHA */
+.divizq {
+    float: left;
+    width: 20%;
+    align-content: center;
+}
+
+.divder {
+    float: right;
+    width: 70%;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+}
+
+.divder p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .divizq, .divder {
+        width: 100%;
+        float: none;
+        text-align: center;
+        font-size: .8rem;
+    }
+}
+
+/* IMAGEN IZQUIERDA */
+.imgizq {
+    float: left;
+    width: 290px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .imgizq {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+}
+
+/* ASIDE - A LA IZQUIERDA */
+aside {
+    float: left;
+    width: 35%;
+    text-align: justify;
+    margin-top: 0px;
+    background-color: #ececec;
+    height: 800px;
+}
+
+@media (max-width: 768px) {
+    aside {
+        width: 100%;
+        float: none;
+        display: block;
+        height: auto;
+    }
+}
+
+/* SECTION - A LA DERECHA */
+section {
+    float: right;
+    width: 65%;
+    text-align: justify;
+    background-color: #fff;
+    margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 100%;
+        float: none;
+        display: block;
+        height: auto;
+    }
+}
+
+/* ARTICLE */
+article {
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0px;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    article {
+        width: 90%;
+        display: block;
+    }
+    article li {
+        font-size: .9rem;
+    }
+}
+
+/* BLOCKQUOTE */
+blockquote {
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ececec;
+    background-color: #ececec;
+    height: 708px;
+}
+
+@media (max-width: 768px) {
+    blockquote {
+        width: 80%;
+        height: auto;
+        font-size: .9rem;
+    }
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ececec;
+    padding: 0px;
+    border-radius: 0px 0px 15px 15px;
+    border-style: none;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    footer {
+        border-radius: 0px;
+        align-content: center;   
+    }
+}
+
+/* ICONOS */
+.icon {
+    width: 14px;
+    height: 14px;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.iconedit {
+    float: center;
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 100%;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.iconedit:hover {
+    transform: scale(1.2) translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .icon, .iconedit {
+        width: 14px;
+        height: 14px;
+        margin: auto;
+    }
+}
+
+/* CONTENEDOR */
+.contenedor {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.67);
+    border-radius: 2em;
+    box-shadow: 0px 5px 3px rgba(0,0,0, .4);
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+.volver-atras button {
+    background-color: #c9484d;
+    color: #FEFCFB;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

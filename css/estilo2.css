@@ -1,0 +1,284 @@
+:root {
+    --oscuro: #07070A;
+    --azulOscuro: #0A1128;
+    --azulClaro: #006FE6;
+    --blanco: #FEFCFB;
+    --gris: #bec3c3;
+    --rojo: #c9484d;
+    --titulos: 'Josefin Sans', serif;
+    --parrafos: 'Monserrat', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanco);
+    color: #333;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 95%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header Styles */
+/* Contenedor principal del header */
+.header {
+    background-color: #222;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+    text-align: center;
+    /* No necesitas position: relative aquí si no vas a posicionar de forma absoluta */
+  }
+  
+  /* Contenedor para el logo */
+  .header-top {
+    padding: 20px 0;
+  }
+  
+  .header-top a {
+    display: inline-block;
+  }
+  
+  .header-top img {
+    height: 63px;
+    width: auto;
+  }
+  
+  /* Contenedor para la navegación */
+  .header-bottom {
+    background-color: #272727;
+    padding: 10px 0;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation li {
+    margin: 0 10px;
+  }
+  
+  .navigation a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }  
+  
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Presentación */
+.present-cover {
+    background-image: url('../img/bio2.jpg');
+    background-repeat: no-repeat;
+    height: 401.72px;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Capa semitransparente sobre la imagen */
+.present-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+    z-index: -1; /* Lo coloca detrás del contenido */
+}
+
+/* Contenido del encabezado */
+.present-content {
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;  /* Alinea hacía la izquierda */
+    align-items: center;          /* Centra verticalmente */
+    width: 100%;
+}
+
+.present-content h1 {
+    font-size: 3rem;
+    color: var(--blanco);
+    text-align: left;
+    padding-top: 0;
+    width: 50%;  /* Limita el ancho a la mitad de la pantalla */
+    margin: 30px;
+}
+
+@media(max-width: 768px) {
+    .present-content h1 {
+        font-size: 20px;
+        margin-top: 300px;
+        line-height: 26px;
+        text-align: left;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Bibliografía */
+.contabio {
+    margin-left: 18%;
+    margin-right: 18%;
+    position: relative;
+    padding-bottom: 4%;
+}
+.contabio::before {
+    content: "";
+    display: table;
+}
+
+.logobio {
+    width: 100%;
+}
+
+.biography-cover p {
+    font-size: 1.5rem;
+    color: var(--oscuro);
+    text-align: left;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.botonbio button {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .biography-cover p {
+        font-size: 1rem;
+        margin: 15px 0;
+        line-height: 1.5;
+        text-align: left;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+.discografia {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-sizing: inherit;
+}
+.discografia::after {
+    content: "";
+    display: table;
+    box-sizing: inherit;
+}
+.discocont {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.discocont::before {
+    box-sizing: inherit;
+}
+.logodisco {
+    height: 472px;
+    width: 50%;
+    object-fit: cover;
+    display: block;   
+}
+.discolet {
+    background-color: var(--gris);
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discolet2 {
+    margin-left: 15px;
+    margin-right: 5px;
+    padding-left: 8px;
+    padding-right: 2px;
+    padding-bottom: 5%;
+}
+.discolet2 p{
+    font-size: 18px;
+    line-height: 25px;
+}
+.botondisco button {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    .discocont {
+      flex-direction: column;
+    }
+    
+    .logodisco {
+      width: 100%;
+      height: auto;
+    }
+    
+    .discolet {
+      max-width: 100%;
+      width: 100%;
+    }
+    
+    .discolet2 {
+      padding: 15px; /* Ajusta el padding para dispositivos móviles */
+    }
+    
+    .discografia {
+      padding: 15px; /* Asegura un espacio adecuado en pantallas pequeñas */
+    }
+  }
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* Social Media */
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.social-media li {
+    margin: 0 15px;
+}
+
+.social-media i {
+    font-size: 30px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

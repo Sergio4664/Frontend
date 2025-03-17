@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento -->
+<html lang="es"> <!-- Inicio del documento HTML con idioma en español -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Configuración de codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hacer la página responsive -->
+    <title>Alejandro Sanz - Biografía</title> <!-- Título de la página -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fuente de iconos de Google -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Fuente de iconos de FontAwesome -->
+    <link rel="stylesheet" href="css/estilo2.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+
+<body>
+    <header class="header" id="Inicio"> <!-- Encabezado de la página con un ID -->
+        <div class="header-top"> <!-- Sección superior del encabezado -->
+            <a href="#" onclick="window.location.href='index.html'; return false;"> <!-- Enlace al inicio -->
+                <img src="img/logo2.png" alt="Alejandro Sanz"> <!-- Logo de la página -->
+            </a>
+        </div>
+        <div class="header-bottom"> <!-- Sección inferior del encabezado -->
+            <nav class="navigation"> <!-- Barra de navegación -->
+                <ul>
+                    <li><a href="#Biografia">Biografía</a></li> <!-- Enlace a la sección de biografía -->
+                    <li><a href="#" onclick="window.location.href='album.html'; return false;">Discografía</a></li>
+                    <!-- Redirección a la página de álbumes -->
+                    <li><a href="#" onclick="window.location.href='galeria.html#'; return false;">Galeria</a></li>
+                    <!-- Redirección a la galería -->
+                    <li><a href="#" onclick="window.location.href='videos.html#'; return false;">Videos</a></li>
+                    <!-- Redirección a la sección de videos -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main> <!-- Contenido principal -->
+        <section class="present-cover"> <!-- Sección de presentación -->
+            <div class="present-content container"> <!-- Contenedor de la presentación -->
+                <h1>Alejandro Sanz se ha consolidado como uno de los artistas más reconocidos e influyentes a nivel
+                    internacional.</h1> <!-- Texto de bienvenida -->
+            </div>
+        </section>
+
+        <section class="contabio" id="Biografia"> <!-- Sección de biografía -->
+            <img src="img/logo2.png" class="logobio" alt="Logo de Alejandro Sanz"> <!-- Imagen de la biografía -->
+            <div class="biography-cover"> <!-- Contenedor de la biografía -->
+                <p><strong>Alejandro Sánchez Pizarro</strong></p> <!-- Nombre real del artista -->
+                <!-- Información personal -->
+                <p>Conocido artísticamente como <strong>Alejandro Sanz</strong>, nació el <strong>18 de diciembre de
+                        1968</strong>en el barrio de Moratalaz, en Madrid, España. Es el menor de dos hermanos y desde
+                    temprana edad mostró un fuerte interés por la música, influenciado por su padre, quien era un
+                    guitarrista aficionado al flamenco.</p>
+                <p>A finales de los años 80, bajo el nombre artístico de Alejandro Magno, grabó su primer álbum,
+                    <strong>"viviendo deprisa" (1990)</strong>, con un estilo más cercano a la rumba flamenca y al pop
+                    español de la
+                    época. Sin embargo, este trabajo no tuvo gran repercusión y pasó desapercibido.
+                </p>
+                <p>Con el tiempo, Sanz encontró su identidad musical y firmó con <strong>Warner Music</strong>, lo que
+                    lo llevó a lanzar
+                    <strong>"si tú me miras (1992)"</strong>, con un sonido más maduro y melódico. Este álbum marcó el
+                    verdadero inicio
+                    de su carrera en la industria musical.
+                </p>
+                <p>Desde entonces, Alejandro ha evolucionado constantemente en su estilo, incorporando influencias del
+                    flamenco, el pop y la música latina. Ha residido en diversos lugares a lo largo de su vida,
+                    incluyendo <strong> Madrid, México, Miami y Cádiz</strong>, donde ha buscado inspiración para su
+                    música.</p>
+                <p>Ha vendido más de <strong>25 millones de discos</strong> y ha sido nominado en múltiples premios
+                    Grammy.</p>
+            </div>
+            <div class="botonbio">
+                <button onclick="location.href='#Inicio'">Ir al inicio</button> <!-- Botón para volver al inicio -->
+            </div>
+        </section>
+
+        <section class="discografia"> <!-- Sección de discografía -->
+            <div class="discocont"> <!-- Contenedor de la discografía -->
+                <img src="img/discografia.jpg" class="logodisco" alt="Alejandro Discografia">
+                <!-- Imagen de la discografía -->
+                <div class="discolet">
+                    <div class="discolet2">
+                                        <!-- Información personal -->
+                        <p>Es además el artista español con el mayor número de premios Grammy en la historia, con un
+                            total de 25 Latin GRAMMY y 4 GRAMMY. En 2017, fue honrado por la Academia de Grabación
+                            Latina como Persona del Año, en reconocimiento a su carrera y a sus significativas
+                            contribuciones filantrópicas.</p>
+                        <p>A lo largo de su carrera, Sanz ha colaborado con diferentes artistas de renombre de todas
+                            partes del mundo, incluyendo intérpretes como Alicia Keys, Shakira, Destiny’s Child, Camila
+                            Cabello, Laura Pausini, Camilo, Alejandro Fernández, Ivete Sangalo, Eros Ramazzotti, Juanes,
+                            Juan Luis Guerra, Marc Anthony, Nicky Jam y el legendario Tony Bennett, entre otros.</p>
+                        <div class="botondisco">
+                            <button onclick="window.location.href='album.html';">Ir a la Discografia</button>
+                            <!-- Botón para ir a la discografía -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-media" id="Redes"> <!-- Sección de redes sociales -->
+            <ul>
+                <li><a href="https://www.facebook.com/ASanzOficial" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook"></i></a></li><!-- Perfil de Facebook de alejandro sanz -->
+                <li><a href="https://twitter.com/alejandrosanz" target="_blank" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a></li><!-- Perfil de la plataforma x de alejandro sanz -->
+                <li><a href="https://www.instagram.com/alejandrosanz/" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a></li><!-- Perfil de instragram de alejandro sanz -->
+                <li><a href="https://www.youtube.com/user/AlejandroSanzVEVO" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a></li><!-- Canal de youtube de alejandro sanz -->
+                <li><a href="https://itunes.apple.com/es/artist/alejandro-sanz/id162036" target="_blank"
+                        aria-label="iTunes"><i class="fab fa-apple"></i></a></li><!-- Perfil de ittunes de apple de alejandro sanz -->
+                <li><a href="https://open.spotify.com/artist/5sUrlPAHlS9NEirDB8SEbF" target="_blank"
+                        aria-label="Spotify"><i class="fab fa-spotify"></i></a></li><!-- Perfil de spotify de alejandro sanz -->
+            </ul>
+        </section>
+    </main>
+
+    <footer> <!-- Pie de página -->
+        <p>© 2025 - <a href="curriculum.html">Sergio Cervantes Guatemala</a></p> <!-- Derechos de autor, con direccionamiento al archivo "curriculum.html" -->
+    </footer>
+
+    <script src="js/slider.js"></script> <!-- Enlace al archivo de JavaScript -->
+</body>
+
+</html>

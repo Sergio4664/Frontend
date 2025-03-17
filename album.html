@@ -1,0 +1,423 @@
+<!DOCTYPE html><!-- Declaración del tipo de documento -->
+<html lang="es"> <!-- Inicio del documento HTML con idioma en español -->
+<head>
+  <meta charset="UTF-8"><!-- Configuración de codificación de caracteres -->
+  <title>Álbumes - Alejandro Sanz</title> <!-- Título de la página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Hacer la página responsive -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Fuente de iconos de Google -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Fuente de iconos de FontAwesome -->
+  <link rel="stylesheet" href="css/estilo.css"><!-- Enlace al archivo CSS externo -->
+</head><!-- Cierre de la sección <head>, donde normalmente se incluyen los metadatos y enlaces externos. -->
+
+<body><!-- Inicio del cuerpo del documento, que contiene el contenido visible en la página. -->
+
+    <header class="header" id="Inicio"><!-- Sección del encabezado de la página, con la clase "header" y un identificador único "Inicio". -->
+        <div class="header-top">   <!-- Contenedor para la parte superior del encabezado. -->
+            <a href="#" onclick="window.location.href='index.html'; return false;"> <!-- Enlace que redirige al archivo 'index.html' al hacer clic, con un comportamiento definido por JavaScript. -->
+                <img src="img/logo2.png" alt="Alejandro Sanz">  <!-- Logo del sitio web, con un texto alternativo para accesibilidad. -->
+            </a>
+        </div>
+        <div class="header-bottom"> <!-- Contenedor para la parte inferior del encabezado, donde se encuentra el menú de navegación. -->
+            <nav class="navigation">  <!-- Define una barra de navegación. -->
+                <ul><!-- Lista no ordenada que contiene enlaces de navegación. -->
+                    <li>
+                        <a href="#" onclick="window.location.href='index.html'; return false;">Inicio</a>
+                        <!-- Enlace que redirige al archivo 'index.html', mostrando la sección de inicio. -->
+                    </li>
+                    <li>
+                        <a href="#" onclick="window.location.href='index.html#Biografia'; return false;">Bibliografía</a>
+                        <!-- Enlace que redirige a la sección "Biografía" dentro de la misma página o archivo index.html. -->
+                    </li>
+                    <li>
+                        <a href="#" onclick="window.location.href='galeria.html#'; return false;">Galeria</a>
+                        <!-- Enlace que redirige al archivo 'galeria.html', mostrando la galería de imágenes. -->
+                    </li>
+                    <li>
+                        <a href="#" onclick="window.location.href='videos.html#'; return false;">Videos</a>
+                        <!-- Enlace que redirige al archivo 'videos.html', mostrando videos relacionados. -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Cierre del encabezado principal de la página. -->
+
+
+    <main><!-- Inicio del contenido principal de la página. -->
+      <section class="albumnes"> <!-- Sección que agrupa los álbumes del artista con la clase "albumnes". -->
+          <div class="scope">  <!-- Contenedor para definir el área que incluye un álbum y sus detalles. -->
+              
+              <!-- Álbum 1 con detalles y funcionalidad interactiva. -->
+              <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor de un álbum que ejecuta la función "showSongsList" cuando se hace clic. -->
+                  <img src="img/album1.jpg" alt=" Álbum Uno"> <!-- Imagen del orimer álbum, con texto alternativo "Álbum Uno" para accesibilidad. -->
+                  <div class="album-info"> <!-- Contenedor para mostrar información del álbum. -->
+                      <h2>Viviendo Deprisa</h2><!-- Título del álbum. -->
+                      <p>1989</p><!-- Año de lanzamiento del álbum. -->
+                  </div>
+                  <!-- Contenedor para la lista de canciones del álbum (inicialmente oculto). -->
+                  <div class="song-list">
+                      <h3>Canciones</h3>  <!-- Encabezado para la lista de canciones. -->
+                      <ul>
+                          <!-- Lista de canciones incluidas en el álbum. -->
+                          <li>1. Los Dos Cogidos De La Mano</li>
+                          <li>2. Pisando Fuerte</li>
+                          <li>3. Lo Que Fui Es Lo Que Soy</li>
+                          <li>4. Todo Sigue Igual</li>
+                          <li>5. Viviendo Deprisa</li>
+                          <li>6. Se Le Apagó La Luz</li>
+                          <li>7. Duelo Al Amanecer</li>
+                          <li>8. Completamente Loca</li>
+                          <li>9. Toca Para Mí</li>
+                          <li>10. Es Este Amor</li>
+                      </ul>
+                  <button class="ver-canciones" onclick="redirectToSongs(event, '');">No sirve</button> 
+                  <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs" pero no tiene destino definido. -->
+                </div>
+              </div>
+
+              <!-- Álbum 2 con detalles y funcionalidad interactiva. -->
+              <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor para un álbum que ejecuta la función "showSongsList" al hacer clic. -->
+              <img src="img/album2.jpg" alt="Álbum Dos"> <!-- Imagen del segundo álbum, con texto alternativo "Álbum Dos" para accesibilidad. -->
+              <div class="album-info">  <!-- Contenedor para la información del álbum. -->
+              <h2>Si tú me miras</h2>   <!-- Título del álbum. -->
+              <p>1992</p>  <!-- Año de lanzamiento del álbum. -->
+              </div>
+              <div class="song-list"> <!-- Contenedor de la lista de canciones del álbum (inicialmente oculto). -->
+              <h3>Canciones</h3>  
+              <ul>
+                <!-- Lista de canciones incluidas en el álbum. -->
+                 <li>1. Si Tú Me Miras</li>
+                 <li>2. Tu Letra Podré Acariciar</li>
+                 <li>3. El Escaparate</li>
+                 <li>4. Como Te Echo De Menos</li>
+                 <li>5. Cuando Acabas Tú</li>
+                 <li>6. Mi Primera Canción</li>
+                 <li>7. Vente Al Más Allá</li>
+                 <li>8. Qué No Te Daría Yo</li>
+                 <li>9. Este Pobre Mortal</li>
+                 <li>10. A Golpes Contra El Calendario</li>
+                </ul>
+                <button class="ver-canciones" onclick="redirectToSongs(event, '');">No sirve</button>
+                <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs" pero no tiene destino definido. -->
+                </div>
+              </div>
+
+          
+          <!-- Álbum 3 con detalles y funcionalidad interactiva. -->
+          <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor de un álbum que ejecuta la función "showSongsList" cuando se hace clic. -->
+            <img src="img/album3.jpg" alt="Álbum Tres"><!-- Imagen del tercer álbum, con texto alternativo "Álbum Tres" para accesibilidad. -->
+            <div class="album-info"><!-- Contenedor para mostrar información del álbum. -->
+              <h2>Álejandro Sanz 3</h2><!-- Título del álbum. -->
+              <p>1994</p>  <!-- Año de lanzamiento del álbum. -->
+            </div>
+             <!-- Contenedor de las canciones (inicialmente oculto) -->
+             <div class="song-list">
+            <h3>Canciones</h3> 
+            <ul>
+              <li>1. La Fuerza Del Corazón </li>
+              <li>2. Por Bandera </li>
+              <li>3. Mi Soledad Y Yo </li>
+              <li>4. Ellos Son Así </li>
+              <li>5. Quiero Morir En Tu Veneno </li>
+              <li>6. ¿Lo Ves?</li>
+              <li>7. Canción Sin Emoción </li>
+              <li>8. Eres Mía </li>
+              <li>9. Ese Que Me Dio La Vida </li>
+              <li>10. Se Me Olvidó Todo Al Verte </li>
+            </ul>
+            <button class="ver-canciones" onclick="redirectToSongs(event, '');">No sirve</button>
+            <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs" pero no tiene destino definido. -->
+          </div>
+          </div>
+          
+          <!-- Álbum 4 con detalles y funcionalidad interactiva. -->
+          <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor de un álbum que ejecuta la función "showSongsList" cuando se hace clic. -->
+            <img src="img/album4.jpg" alt="Álbum Cuatro"><!-- Imagen del cuarto álbum, con texto alternativo "Álbum cuatro" para accesibilidad. -->
+            <div class="album-info"><!-- Contenedor para mostrar información del álbum. -->
+              <h2>Más</h2><!-- Título del álbum. -->
+              <p>1996</p>  <!-- Año de lanzamiento del álbum. -->
+            </div>
+            <!-- Contenedor de las canciones (inicialmente oculto) -->
+            <div class="song-list">
+            <h3>Canciones</h3>
+            <ul>
+              <li>1. Y, Si Fuera Ella!</li>
+              <li>2. Ese Último Momento</li>
+              <li>3. Corazón Partío</li>
+              <li>4. Siempre Es de Noche</li>
+              <li>4. Siempre Es de Noche</li>
+              <li>5. La Margarita Dijo No </li>
+              <li>6. Hoy Que No Estás </li>
+              <li>7. Un Charquito De Estrellas  </li>
+              <li>8. Amiga Mía </li>
+              <li>9. Si Hay Dios... </li>
+              <li>10. Aquello Que Me Diste </li>
+            </ul>
+            <button class="ver-canciones" onclick="redirectToSongs(event, 'album4.html');">Ver albúm completo</button>
+            <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs", nos direccionara al archivo "album4.html", la cual estara todas las canciones. -->
+          </div>
+          </div>
+
+          <!-- Álbum 5 con detalles y funcionalidad interactiva. -->
+          <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor de un álbum que ejecuta la función "showSongsList" cuando se hace clic. -->
+            <img src="img/album5.jpg" alt="Álbum Cinco"><!-- Imagen del quinto álbum, con texto alternativo "Álbum cinco" para accesibilidad. -->
+            <div class="album-info"><!-- Contenedor para mostrar información del álbum. -->
+              <h2>El alma al aire</h2><!-- Título del álbum. -->
+              <p>1994</p>  <!-- Año de lanzamiento del álbum. -->
+            </div>
+            <!-- Contenedor de las canciones (inicialmente oculto) -->
+            <div class="song-list">
+            <h3>Canciones</h3> 
+            <ul>
+              <li>1. Cuando Nadie Me Ve </li>
+              <li>2. Hay Un Universo De Pequeñas Cosas </li>
+              <li>3. Quisiera Ser </li>
+              <li>4. Para Que Me Quieras</li>
+              <li>5. Llega, Llegó Soledad </li>
+              <li>6. El Alma Al Aire</li>
+              <li>7. Me Iré </li>
+              <li>8. Hicimos Un Trato </li>
+              <li>9. Tiene Que Ser Pecado </li>
+              <li>10. Silencio (Ghost Track) </li>
+            </ul>
+            <button class="ver-canciones" onclick="redirectToSongs(event, '');">No sirve</button>
+            <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs" pero no tiene destino definido. -->
+          </div>
+          </div>
+
+          <!-- Álbum 6 con detalles y funcionalidad interactiva. -->
+          <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor de un álbum que ejecuta la función "showSongsList" cuando se hace clic. -->
+            <img src="img/album6.jpg" alt="Álbum Seis"><!-- Imagen del sexto álbum, con texto alternativo "Álbum seis" para accesibilidad. -->
+            <div class="album-info"><!-- Contenedor para mostrar información del álbum. -->
+              <h2>No es lo mismo</h2><!-- Título del álbum. -->
+              <p>2002</p>  <!-- Año de lanzamiento del álbum. -->
+            </div>
+            <!-- Contenedor de las canciones (inicialmente oculto) -->
+            <div class="song-list">
+            <h3>Canciones</h3>
+            <ul>
+              <li>1. No Es Lo Mismo </li>
+              <li>2. Hoy Llueve, Hoy Duele </li>
+              <li>3. He Sido Tan Feliz Contigo </li>
+              <li>4. Try To Save Your Song</li>
+              <li>5. Eso </li>
+              <li>6. Labana </li>
+              <li>7. Sandy A Orilla Do Mundo </li>
+              <li>8. 12 Por 8 </li>
+              <li>9. Al Olvido Invito Yo </li>
+              <li>10. Regálame La Silla Donde Te Esperé </li>
+            </ul>
+            <button class="ver-canciones" onclick="redirectToSongs(event, '');">No sirve</button>
+            <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs" pero no tiene destino definido. -->
+          </div>
+          </div>
+
+          <!-- Álbum 7 con detalles y funcionalidad interactiva. -->
+          <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor de un álbum que ejecuta la función "showSongsList" cuando se hace clic. -->
+            <img src="img/album7.jpg" alt="Álbum Siete"><!-- Imagen del séptimo álbum, con texto alternativo "Álbum siete" para accesibilidad. -->
+            <div class="album-info"><!-- Contenedor para mostrar información del álbum. -->
+              <h2>El tren de los momentos</h2><!-- Título del álbum. -->
+              <p>2005</p>  <!-- Año de lanzamiento del álbum. -->
+            </div>
+            <!-- Contenedor de las canciones (inicialmente oculto) -->
+            <div class="song-list">
+            <h3>Canciones</h3>
+            <ul>
+              <li>1. Enséñame Tus Manos </li>
+              <li>2. A La Primera Persona </li>
+              <li>3. Te Lo Agradezco, Pero No </li>
+              <li>4. Donde Convergemos </li>
+              <li>5. En La Planta De Tus Pies </li>
+              <li>6. La Peleíta </li>
+              <li>7. Se Lo Dices Tú </li>
+              <li>8. Se Molestan </li>
+              <li>9. Te Quiero Y Te Temo </li>
+              <li>10. El Tren De Los Momentos</li>
+            </ul>
+            <button class="ver-canciones" onclick="redirectToSongs(event, '');">No sirve</button>
+            <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs" pero no tiene destino definido. -->
+          </div>
+          </div>
+
+         <!-- Álbum 8 con detalles y funcionalidad interactiva. -->
+         <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor de un álbum que ejecuta la función "showSongsList" cuando se hace clic. -->
+            <img src="img/album8.jpg" alt="Álbum Ocho"><!-- Imagen del octavo álbum, con texto alternativo "Álbum ocho" para accesibilidad. -->
+            <div class="album-info"><!-- Contenedor para mostrar información del álbum. -->
+              <h2>Paraíso Express</h2><!-- Título del álbum. -->
+              <p>2008</p>  <!-- Año de lanzamiento del álbum. -->
+            </div>
+            <!-- Contenedor de las canciones (inicialmente oculto) -->
+            <div class="song-list">
+            <h3>Canciones</h3>
+            <ul>
+              <li>1. Mi Peter Punk </li>
+              <li>2. Desde Cuándo </li>
+              <li>3. Looking For Paradise (Feat. Alicia Keys) </li>
+              <li>4. Yo Hice Llorar Hasta A Los Ángeles </li>
+              <li>5. Sin Que Se Note </li>
+              <li>6. Lola Soledad </li>
+              <li>7. Pero Esta Tarde No Te Vas </li>
+              <li>8. Mala </li>
+              <li>9. Tú No Tienes La Culpa </li>
+              <li>10. Nuestro Amor Será Leyenda </li>
+            </ul>
+            <button class="ver-canciones" onclick="redirectToSongs(event, '');">No sirve</button>
+            <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs" pero no tiene destino definido. -->
+          </div>
+          </div>
+
+          <!-- Álbum 9 con detalles y funcionalidad interactiva. -->
+          <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor de un álbum que ejecuta la función "showSongsList" cuando se hace clic. -->
+            <img src="img/album9.jpg" alt="Álbum Nueve"><!-- Imagen del noveno álbum, con texto alternativo "Álbum nueve" para accesibilidad. -->
+            <div class="album-info"><!-- Contenedor para mostrar información del álbum. -->
+              <h2>La música no se toca</h2><!-- Título del álbum. -->
+              <p>2011</p>  <!-- Año de lanzamiento del álbum. -->
+            </div>
+            <!-- Contenedor de las canciones (inicialmente oculto) -->
+            <div class="song-list">
+            <h3>Canciones</h3>
+            <ul>
+              <li>1. La Música No Se Toca </li>
+              <li>2. Yo Te Traigo...20 Años </li>
+              <li>3. No Me Compares </li>
+              <li>4. Llamando A La Mujer Acción</li>
+              <li>5. Mi Marciana </li>
+              <li>6. Camino De Rosas </li>
+              <li>7. Se Vende </li>
+              <li>8. Cómo Decir Sin Andar Diciendo </li>
+              <li>9. Camino A Casa </li>
+              <li>10. Nena </li>
+            </ul>
+            <button class="ver-canciones" onclick="redirectToSongs(event, '');">No sirve</button>
+            <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs" pero no tiene destino definido. -->
+          </div>
+          </div>
+
+         <!-- Álbum 10 con detalles y funcionalidad interactiva. -->
+         <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor de un álbum que ejecuta la función "showSongsList" cuando se hace clic. -->
+            <img src="img/album10.jpg" alt="Álbum Diez"><!-- Imagen del décimo álbum, con texto alternativo "Álbum Diez" para accesibilidad. -->
+            <div class="album-info"><!-- Contenedor para mostrar información del álbum. -->
+              <h2>Sirope</h2><!-- Título del álbum. -->
+              <p>2014</p>  <!-- Año de lanzamiento del álbum. -->
+            </div>
+            <!-- Contenedor de las canciones (inicialmente oculto) -->
+            <div class="song-list">
+            <h3>Canciones</h3>
+            <ul>
+              <li>1. A Mí No Me Importa </li>
+              <li>2. Capitán Tapón </li>
+              <li>3. Pero Tú </li>
+              <li>4. La Guarida Del Calor </li>
+              <li>5. Tú La Necesitas </li>
+              <li>6. Un Zombie A La Intemperie </li>
+              <li>7. Todo Huele A Ti </li>
+              <li>8. No Madura El Coco </li>
+              <li>9. La Vida Que Respira </li>
+              <li>10. Suena La Pelota Feat. Juan Luis Guerra</li>
+              <li>11. A Que No Me Dejas </li>
+              <li>12. El Silencio De Los Cuervos </li>
+              <li>13. El Club De La Verdad </li>
+            </ul>
+            <button class="ver-canciones" onclick="redirectToSongs(event, '');">No sirve</button>
+            <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs" pero no tiene destino definido. -->
+          </div>
+          </div>
+
+          <!-- Álbum 11 con detalles y funcionalidad interactiva. -->
+          <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor de un álbum que ejecuta la función "showSongsList" cuando se hace clic. -->
+            <img src="img/album11.jpg" alt="Álbum Once"><!-- Imagen del onceavo álbum, con texto alternativo "Álbum once" para accesibilidad. -->
+            <div class="album-info"><!-- Contenedor para mostrar información del álbum. -->
+              <h2>#ElDisco</h2><!-- Título del álbum. -->
+              <p>2018</p>  <!-- Año de lanzamiento del álbum. -->
+            </div>
+            <!-- Contenedor de las canciones (inicialmente oculto) -->
+            <div class="song-list">
+            <h3>Canciones</h3>
+            <ul>
+              <li>1. El Trato </li>
+              <li>2. Mi Persona Favorita (Alejandro Sanz & Camila Cabello) </li>
+              <li>3. No Tengo Nada </li>
+              <li>4. Te Canto un Son </li>
+              <li>5. Los Lugares </li>
+              <li>6. Back in the City </li>
+              <li>7. Este Segundo (Alejandro Sanz & Judit Neddermann) </li>
+              <li>8. Azúcar en un Bowl </li>
+              <li>9. It's OK </li>
+            </ul>
+            <button class="ver-canciones" onclick="redirectToSongs(event, '');">No sirve</button>
+            <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs" pero no tiene destino definido. -->
+          </div>
+          </div>
+
+          <!-- Álbum 12 con detalles y funcionalidad interactiva. -->
+          <div class="fotosalbums" onclick="showSongsList(this);"> <!-- Contenedor de un álbum que ejecuta la función "showSongsList" cuando se hace clic. -->
+            <img src="img/album12.jpg" alt="Álbum Doce"><!-- Imagen del doceavo álbum, con texto alternativo "Álbum Doce" para accesibilidad. -->
+            <div class="album-info"><!-- Contenedor para mostrar información del álbum. -->
+              <h2>Sanz</h2><!-- Título del álbum. -->
+              <p>2020</p>  <!-- Año de lanzamiento del álbum. -->
+            </div>
+            <!-- Contenedor de las canciones (inicialmente oculto) -->
+            <div class="song-list">
+            <h3>Canciones</h3>
+            <ul>
+              <li>1. Bio </li>
+              <li>2. Iba </li>
+              <li>3. Yo No Quiero Suerte </li>
+              <li>4. La Rosa </li>
+              <li>5. Si Yo Quisiera Y Si Tu Pudieras </li>
+              <li>6. Mares de Miel </li>
+              <li>7. Uno Nada Más </li>
+              <li>8. No Sé Qué Me Pases </li>
+              <li>9. Geometría </li>
+              <li>10. Y Ya Te Queria </li>
+            </ul>
+            <button class="ver-canciones" onclick="redirectToSongs(event, '');">No sirve</button>
+            <!-- Botón con la clase "ver-canciones" que ejecuta "redirectToSongs" pero no tiene destino definido. -->
+          </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="social-media" id="Redes"> <!-- Sección de redes sociales -->
+      <ul>
+          <li><a href="https://www.facebook.com/ASanzOficial" target="_blank" aria-label="Facebook"><i
+                      class="fab fa-facebook"></i></a></li><!-- Perfil de Facebook de alejandro sanz -->
+          <li><a href="https://twitter.com/alejandrosanz" target="_blank" aria-label="Twitter"><i
+                      class="fab fa-twitter"></i></a></li><!-- Perfil de la plataforma x de alejandro sanz -->
+          <li><a href="https://www.instagram.com/alejandrosanz/" target="_blank" aria-label="Instagram"><i
+                      class="fab fa-instagram"></i></a></li><!-- Perfil de instragram de alejandro sanz -->
+          <li><a href="https://www.youtube.com/user/AlejandroSanzVEVO" target="_blank" aria-label="YouTube"><i
+                      class="fab fa-youtube"></i></a></li><!-- Canal de youtube de alejandro sanz -->
+          <li><a href="https://itunes.apple.com/es/artist/alejandro-sanz/id162036" target="_blank"
+                  aria-label="iTunes"><i class="fab fa-apple"></i></a></li><!-- Perfil de ittunes de apple de alejandro sanz -->
+          <li><a href="https://open.spotify.com/artist/5sUrlPAHlS9NEirDB8SEbF" target="_blank"
+                  aria-label="Spotify"><i class="fab fa-spotify"></i></a></li><!-- Perfil de spotify de alejandro sanz -->
+      </ul>
+  </section>
+    </main>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 - <a href="curriculum.html">Sergio Cervantes Guatemala</a></p><!-- Derechos de autor, con direccionamiento al archivo "curriculum.html" -->
+</footer>
+
+
+<!-- JavaScript para mostrar overlay y redirigir -->
+<script>
+  // Muestra el overlay con la lista de canciones
+  function showSongsList(albumCard) {
+    const songList = albumCard.querySelector('.song-list');
+    if (songList) {
+      songList.style.display = 'block';
+    }
+  }
+
+  // Redirige a la página de canciones; se usa stopPropagation para evitar
+  // que el clic se propague al contenedor padre después de presionar el botón.
+  function redirectToSongs(e, url) {
+    e.stopPropagation();
+    window.location.href = url;
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MÁS - Alejandro Sanz</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo3.css">
+</head>
+
+<body>
+    <!-- Header con barra de navegación -->
+    <header class="header" id="Inicio">
+        <div class="header-top">
+            <a href="#" onclick="window.location.href='index.html'; return false;">
+                <img src="img/logo2.png" alt="Alejandro Sanz">
+            </a>
+        </div>
+        <div class="header-bottom">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" onclick="window.location.href='index.html'; return false;">Inicio</a></li>
+                    <li><a href="#" onclick="window.location.href='index.html#Biografia'; return false;">Bibliografía</a></li>
+                    <li><a href="#" onclick="window.location.href='album.html'; return false;">Discografía</a></li>
+                    <li><a href="#" onclick="window.location.href='galeria.html'; return false;">Galeria</a></li>
+                    <li><a href="#" onclick="window.location.href='videos.html#'; return false;">Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Fondo de la página -->
+    <div class="bg-overlay"></div>
+
+    <!-- Sección principal del álbum -->
+    <main class="album-main">
+        <div class="container album-container">
+            <!-- Encabezado del álbum (carátula + info) -->
+            <div class="album-header">
+                <div class="album-cover">
+                    <img src="img/album4.jpg" alt="Álbum Más">
+                </div>
+                <div class="album-info">
+                    <h1>MÁS</h1>
+                    <p class="release-year">1996</p>
+                </div>
+            </div>
+
+            <!-- Lista de canciones -->
+            <div class="track-list">
+                <!-- Track 1 -->
+                <div class="track cancion" data-id="1">
+                    <div class="track-header">
+                        <span class="track-title">01 - Y, Si Fuera Ella!</span>
+                    </div>
+                </div>
+
+                <!-- Track 2 -->
+                <div class="track cancion" data-id="2">
+                    <div class="track-header">
+                        <span class="track-title">02. Ese Último Momento </span>
+                    </div>
+                </div>
+
+                <!-- Track 3 -->
+                <div class="track cancion" data-id="3">
+                    <div class="track-header">
+                        <span class="track-title">03 - Corazón Partío</span>
+                    </div>
+                </div>
+
+                <!-- Track 4 -->
+                <div class="track cancion" data-id="4">
+                    <div class="track-header">
+                        <span class="track-title">04 - Siempre Es de Noche</span>
+                    </div>
+                </div>
+
+                <!-- Track 5 -->
+                <div class="track cancion" data-id="5">
+                    <div class="track-header">
+                        <span class="track-title">05 - La margarita dijo no</span>
+                    </div>
+                </div>
+
+                <!-- Track 6 -->
+                <div class="track cancion" data-id="6">
+                    <div class="track-header">
+                        <span class="track-title">06 - Hoy Que No Estás</span>
+                    </div>
+                </div>
+
+                <!-- Track 7 -->
+                <div class="track cancion" data-id="7">
+                    <div class="track-header">
+                        <span class="track-title">07 - Un Charquito de Estrellas</span>
+                    </div>
+                </div>
+
+                <!-- Track 8 -->
+                <div class="track cancion" data-id="8">
+                    <div class="track-header">
+                        <span class="track-title">08 - Amiga Mía</span>
+                    </div>
+                </div>
+
+                <!-- Track 9 -->
+                <div class="track cancion" data-id="9">
+                    <div class="track-header">
+                        <span class="track-title">09 - Si Hay Dios...</span>
+                    </div>
+                </div>
+
+                <!-- Track 10 -->
+                <div class="track cancion" data-id="10">
+                    <div class="track-header">
+                        <span class="track-title">10 - Aquello Que Me Diste</span>
+                    </div>
+                </div>
+                <!-- Puedes agregar más tracks según necesites -->
+            </div>
+        </div>
+        
+    </main>
+  
+    <!-- Ventana modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <audio controls id="audio"></audio>
+            <div id="letra"></div>
+        </div>
+    </div>
+
+    <section class="social-media" id="Redes"> <!-- Sección de redes sociales -->
+        <ul>
+            <li><a href="https://www.facebook.com/ASanzOficial" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook"></i></a></li><!-- Perfil de Facebook de alejandro sanz -->
+            <li><a href="https://twitter.com/alejandrosanz" target="_blank" aria-label="Twitter"><i
+                        class="fab fa-twitter"></i></a></li><!-- Perfil de la plataforma x de alejandro sanz -->
+            <li><a href="https://www.instagram.com/alejandrosanz/" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a></li><!-- Perfil de instragram de alejandro sanz -->
+            <li><a href="https://www.youtube.com/user/AlejandroSanzVEVO" target="_blank" aria-label="YouTube"><i
+                        class="fab fa-youtube"></i></a></li><!-- Canal de youtube de alejandro sanz -->
+            <li><a href="https://itunes.apple.com/es/artist/alejandro-sanz/id162036" target="_blank"
+                    aria-label="iTunes"><i class="fab fa-apple"></i></a></li><!-- Perfil de ittunes de apple de alejandro sanz -->
+            <li><a href="https://open.spotify.com/artist/5sUrlPAHlS9NEirDB8SEbF" target="_blank"
+                    aria-label="Spotify"><i class="fab fa-spotify"></i></a></li><!-- Perfil de spotify de alejandro sanz -->
+        </ul>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 - <a href="curriculum.html">Sergio Cervantes Guatemala</a></p><!-- Derechos de autor, con direccionamiento al archivo "curriculum.html" -->
+    </footer>
+
+    <!-- Archivo de JavaScript -->
+    <script src="js/letras.js"></script> <!-- Enlace al archivo de JavaScript -->
+</body>
+
+</html>
