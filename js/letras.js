@@ -1,3 +1,7 @@
+/**
+ * Objeto 'canciones' que contiene una lista de canciones con su información correspondiente: nombre, archivo de audio y letra. Cada canción está indexada
+ * por un número único.
+ */
 const canciones = {
     1: {
         nombre: "Y, Si Fuera Ella!",
@@ -42,52 +46,54 @@ const canciones = {
     9: {
         nombre: "Si Hay Dios...",
         audio: "music/09 - Si Hay Dios....mp3",
-        letra: "Eh, si hay Dios seguramente entiende de emoción, si hay Dios...<br>Eh, si hay Dios, seguramente entiende de emoción, si hay Dios...<br><br>Podrás llevarte aquellos que me importan,<br>despojarme de mis ropas, desviarme de la luz.<br>Podrás llenar de oscuridad mis sueños,<br>podrás porque eres tú.<br><br>Podrás romper de nuevo el juramento,<br>deshaciendo las cadenas que te ataron una vez.<br>Pero dame tú el valor, que tengo miedo.<br>O puedes darme una esperanza<br>o, arrancarme, al fin, las ganas de seguir por ti<br>buscando entre mi almohada.<br>¿Qué es una Dama Blanca?<br><br>Eh, si hay Dios,<br>seguramente entiende de emoción, si hay Dios...<br><br>Podría haberte dicho que me importas.<br>Eso... Y un millón de cosas. Pude hacerlo<br>y no lo hice y no sé por qué.<br>Será porque es más fácil escribirlo<br>o demostrarlo, que<br>montar un numerito de esos de fatalidad,<br>según lo que establece el reglamento<br>del aparentar.<br><br>Podría haber llorado un mar de lágrimas<br>saladas, arrojarme a los abismos<br>y partirme en dos el alma, desatar la tempestad<br>y el huracán de mi garganta,<br>y confesar desesperado que no puedo con mi rabia.<br><br>Aunque mi actitud no es hoy tan evidente<br>no puedo sufrir más.<br>Que el dolor cuando es por dentro es más fuerte,<br>no se alivia con decírselo a la gente.<br><br>Lloraré... si sé llorar,<br>como el tímido rocío de un clavel en mi soledad.<br>Estaré...Todos se irán, ya lo sé,<br>a tu lado en cada golpe,<br>como lo hacen las orillas y la mar,<br>como lo hace el campo y el agua que lloverá.<br>Podría ser más educado<br>pero, el alma sólo entiende de emoción<br>y, si hay Dios, seguro entiende de emoción.<br><br>Eh, si hay Dios<br>seguramente entiende de emoción, si hay Dios...<br><br>Podría haber llorado un mar de lágrimas<br>saladas, arrojarme a los abismos<br>y partirme en dos el alma, desatar la tempestad<br>y el huracán de mi garganta,<br>y confesar desesperado que no puedo con mi rabia.<br><br>Aunque mi actitud no es hoy tan evidente,<br>no puedo sufrir más.<br>Que el dolor cuando es por dentro es más fuerte...<br><br>Lloraré...<br>Como el tímido rocío de un clavel, en soledad.<br>Estaré... todos se irán, ya lo sé,<br>a tu lado en cada golpe,<br>como lo hacen las orillas y la mar,<br>como lo hace el campo y el agua que lloverá.<br>Podría ser más educado<br>Pero, el alma sólo entiende de emoción<br>y, si hay Dios, seguro entiende de emoción.<br><br>Eh, si hay Dios, seguramente entiende de emoción, si hay Dios...<br>Eh, si hay Dios, seguramente entiende de emoción, si hay Dios...<br>Eh, si hay Dios, sea como sea simplemente amor, ¡ay Dios...!<br>Eh, si hay Dios, seguramente entiende de emoción, si hay Dios...<br>Eh, si hay Dios, seguramente entiende de tu amor, si hay Dios...<br>Eh, si hay Dios, seguramente entiende de emoción..."    
+        letra: "Eh, si hay Dios seguramente entiende de emoción, si hay Dios...<br>Eh, si hay Dios, seguramente entiende de emoción, si hay Dios...<br><br>Podrás llevarte aquellos que me importan,<br>despojarme de mis ropas, desviarme de la luz.<br>Podrás llenar de oscuridad mis sueños,<br>podrás porque eres tú.<br><br>Podrás romper de nuevo el juramento,<br>deshaciendo las cadenas que te ataron una vez.<br>Pero dame tú el valor, que tengo miedo.<br>O puedes darme una esperanza<br>o, arrancarme, al fin, las ganas de seguir por ti<br>buscando entre mi almohada.<br>¿Qué es una Dama Blanca?<br><br>Eh, si hay Dios,<br>seguramente entiende de emoción, si hay Dios...<br><br>Podría haberte dicho que me importas.<br>Eso... Y un millón de cosas. Pude hacerlo<br>y no lo hice y no sé por qué.<br>Será porque es más fácil escribirlo<br>o demostrarlo, que<br>montar un numerito de esos de fatalidad,<br>según lo que establece el reglamento<br>del aparentar.<br><br>Podría haber llorado un mar de lágrimas<br>saladas, arrojarme a los abismos<br>y partirme en dos el alma, desatar la tempestad<br>y el huracán de mi garganta,<br>y confesar desesperado que no puedo con mi rabia.<br><br>Aunque mi actitud no es hoy tan evidente<br>no puedo sufrir más.<br>Que el dolor cuando es por dentro es más fuerte,<br>no se alivia con decírselo a la gente.<br><br>Lloraré... si sé llorar,<br>como el tímido rocío de un clavel en mi soledad.<br>Estaré...Todos se irán, ya lo sé,<br>a tu lado en cada golpe,<br>como lo hacen las orillas y la mar,<br>como lo hace el campo y el agua que lloverá.<br>Podría ser más educado<br>pero, el alma sólo entiende de emoción<br>y, si hay Dios, seguro entiende de emoción.<br><br>Eh, si hay Dios<br>seguramente entiende de emoción, si hay Dios...<br><br>Podría haber llorado un mar de lágrimas<br>saladas, arrojarme a los abismos<br>y partirme en dos el alma, desatar la tempestad<br>y el huracán de mi garganta,<br>y confesar desesperado que no puedo con mi rabia.<br><br>Aunque mi actitud no es hoy tan evidente,<br>no puedo sufrir más.<br>Que el dolor cuando es por dentro es más fuerte...<br><br>Lloraré...<br>Como el tímido rocío de un clavel, en soledad.<br>Estaré... todos se irán, ya lo sé,<br>a tu lado en cada golpe,<br>como lo hacen las orillas y la mar,<br>como lo hace el campo y el agua que lloverá.<br>Podría ser más educado<br>Pero, el alma sólo entiende de emoción<br>y, si hay Dios, seguro entiende de emoción.<br><br>Eh, si hay Dios, seguramente entiende de emoción, si hay Dios...<br>Eh, si hay Dios, seguramente entiende de emoción, si hay Dios...<br>Eh, si hay Dios, sea como sea simplemente amor, ¡ay Dios...!<br>Eh, si hay Dios, seguramente entiende de emoción, si hay Dios...<br>Eh, si hay Dios, seguramente entiende de tu amor, si hay Dios...<br>Eh, si hay Dios, seguramente entiende de emoción..."
     },
     10: {
         nombre: "Aquello Que Me Diste",
         audio: "music/10 - Aquello Que Me Diste.mp3",
-        letra: "Inmensas tempestades, tu mano y la mía.<br>Tienes algo... no sé qué es.<br>Hay tanto de melódico en tu fantasía...<br>Y un toque de misterio, mi límite...<br>Conservo algún recuerdo que no debería,<br>lo sé, ¿qué puedo hacer?<br>A todos nos ocurre: la monotonía<br>nos gana la batalla, alguna vez, alguna vez...<br><br>Por eso, vida mía, por el día a día,<br>por enseñarme a ver el cielo más azul,<br>por ser mi compañera y darme tu energía;<br>no cabe en una vida mi gratitud<br>por aguantar mis malos ratos y manías,<br>por conservar secretos en ningún baúl...<br>Quiero ser por una vez,<br>capaz de ganar y de perder.<br><br>Perdona si me ves perder la compostura.<br>En serio te agradezco que hayas sido mía.<br>Si ves que mi canción acaso no resulta,<br>avísame y recojo la melancolía..., melancolía.<br><br>Te dejaré una ilusión,<br>envuelta en una promesa de eterna pasión;<br>una esperanza pintada en un mar de cartón;<br>un mundo nuevo que sigue donde un día lo pusiste.<br>Tú eres esa mujer<br>por quien me siento ese hombre capaz de querer,<br>viviendo cada segundo la primera vez,<br>sabiendo que me quisiste y todo aquello que me diste.<br><br>Conserva mi recuerdo de piratería.<br>Derrama los secretos: abre aquel baúl.<br>Sigamos siendo cómplices en compañía,<br>de aquello que me diste bajo el cielo azul.<br>Por aguantar mis malos ratos y manías,<br>por conservar secretos que me guardas tú.<br>Quiero ser por una vez,<br>capaz de ganar y de perder.<br><br>Perdón si alguna vez guardé la compostura.<br>No sabes lo que ha sido que hayas sido mía.<br>Comprendo que agotaste toda tu dulzura,<br>pero no me pidas, niña,<br>la melancolía..., melancolía.<br><br>Te dejaré una ilusión,<br>envuelta en una promesa de eterna pasión;<br>una esperanza pintada en un mar de cartón;<br>un mundo nuevo que existe donde un día lo pusiste.<br>Tú eres esa mujer<br>por quien me siento ese hombre capaz de querer,<br>vivo cada segundo la primera vez,<br>sabiendo que me quisiste<br>y todo aquello que me diste:<br><br>...un mundo nuevo que sigue<br>donde un día lo pusiste.<br>Tú eres esa mujer<br>por quien me siento ese hombre capaz de querer,<br>vivo cada segundo la primera vez,<br>sabiendo que me quisiste<br>y todo aquello que me diste." 
+        letra: "Inmensas tempestades, tu mano y la mía.<br>Tienes algo... no sé qué es.<br>Hay tanto de melódico en tu fantasía...<br>Y un toque de misterio, mi límite...<br>Conservo algún recuerdo que no debería,<br>lo sé, ¿qué puedo hacer?<br>A todos nos ocurre: la monotonía<br>nos gana la batalla, alguna vez, alguna vez...<br><br>Por eso, vida mía, por el día a día,<br>por enseñarme a ver el cielo más azul,<br>por ser mi compañera y darme tu energía;<br>no cabe en una vida mi gratitud<br>por aguantar mis malos ratos y manías,<br>por conservar secretos en ningún baúl...<br>Quiero ser por una vez,<br>capaz de ganar y de perder.<br><br>Perdona si me ves perder la compostura.<br>En serio te agradezco que hayas sido mía.<br>Si ves que mi canción acaso no resulta,<br>avísame y recojo la melancolía..., melancolía.<br><br>Te dejaré una ilusión,<br>envuelta en una promesa de eterna pasión;<br>una esperanza pintada en un mar de cartón;<br>un mundo nuevo que sigue donde un día lo pusiste.<br>Tú eres esa mujer<br>por quien me siento ese hombre capaz de querer,<br>viviendo cada segundo la primera vez,<br>sabiendo que me quisiste y todo aquello que me diste.<br><br>Conserva mi recuerdo de piratería.<br>Derrama los secretos: abre aquel baúl.<br>Sigamos siendo cómplices en compañía,<br>de aquello que me diste bajo el cielo azul.<br>Por aguantar mis malos ratos y manías,<br>por conservar secretos que me guardas tú.<br>Quiero ser por una vez,<br>capaz de ganar y de perder.<br><br>Perdón si alguna vez guardé la compostura.<br>No sabes lo que ha sido que hayas sido mía.<br>Comprendo que agotaste toda tu dulzura,<br>pero no me pidas, niña,<br>la melancolía..., melancolía.<br><br>Te dejaré una ilusión,<br>envuelta en una promesa de eterna pasión;<br>una esperanza pintada en un mar de cartón;<br>un mundo nuevo que existe donde un día lo pusiste.<br>Tú eres esa mujer<br>por quien me siento ese hombre capaz de querer,<br>vivo cada segundo la primera vez,<br>sabiendo que me quisiste<br>y todo aquello que me diste:<br><br>...un mundo nuevo que sigue<br>donde un día lo pusiste.<br>Tú eres esa mujer<br>por quien me siento ese hombre capaz de querer,<br>vivo cada segundo la primera vez,<br>sabiendo que me quisiste<br>y todo aquello que me diste."
     }
-    
+
 };
 
 // Elementos del DOM
-const modal = document.getElementById("modal");
-const audioElement = document.getElementById("audio");
-const modalContent = document.querySelector(".modal-content");
+const modal = document.getElementById("modal"); // Modal donde se muestra la letra y el audio de la canción
+const audioElement = document.getElementById("audio"); // Elemento de audio que se reproduce al seleccionar la canción
+const modalContent = document.querySelector(".modal-content"); // Contenido del modal donde se inserta la letra y el audio
 
 // Añadir evento a las canciones
-document.querySelectorAll(".cancion").forEach(cancionElement => {
-    cancionElement.addEventListener("click", () => {
-        // Remover clase "selected" de todas las canciones
+document.querySelectorAll(".cancion").forEach(cancionElement => {// Añadir un evento de clic a cada elemento de canción
+    cancionElement.addEventListener("click", () => {    // Remover la clase "selected" de todas las canciones previamente seleccionadas
         document.querySelectorAll(".track-header").forEach(header => {
             header.classList.remove("selected");
         });
 
+        // Obtener el ID de la canción seleccionada desde el atributo "data-id"
         const id = cancionElement.getAttribute("data-id");
         if (canciones[id]) {
-            // Mostrar la letra directamente desde el objeto canciones
+            // Si la canción existe en el objeto canciones, actualizar el contenido del modal
             modalContent.innerHTML = `
-                <span class="close">&times;</span>
-                <h2>${canciones[id].nombre}</h2>
+                <span class="close">&times;</span> <!-- Botón para cerrar el modal -->
+                <h2>${canciones[id].nombre}</h2> <!-- Título de la canción -->
                 <audio controls id="audio">
-                    <source src="${canciones[id].audio}" type="audio/mp3">
+                    <source src="${canciones[id].audio}" type="audio/mp3"> <!-- Ruta del archivo de audio -->
                     Tu navegador no soporta este reproductor.
                 </audio>
-                <div id="letra">${canciones[id].letra}</div>
+                <div id="letra">${canciones[id].letra}</div> <!-- Letra de la canción -->
             `;
+            // Mostrar el modal con el contenido actualizado
             modal.style.display = "block";
 
-            // Añadir clase "selected" al header de la canción seleccionada
+            // Añadir la clase "selected" al header de la canción seleccionada para resaltar la canción
             cancionElement.querySelector(".track-header").classList.add("selected");
 
-            // Actualiza los elementos del DOM con los nuevos botones de cierre
+            // Actualizar el evento de cierre del modal
             const newCloseButton = document.querySelector(".close");
             newCloseButton.addEventListener("click", () => {
+                // Cerrar el modal
                 modal.style.display = "none";
 
-                // Remover clase "selected" cuando se cierra el modal
+                // Remover la clase "selected" de todas las canciones cuando se cierra el modal
                 document.querySelectorAll(".track-header").forEach(header => {
                     header.classList.remove("selected");
                 });
@@ -99,11 +105,13 @@ document.querySelectorAll(".cancion").forEach(cancionElement => {
 // Cerrar la ventana modal al hacer clic fuera de ella
 window.addEventListener("click", (event) => {
     if (event.target == modal) {
+        // Si se hace clic fuera del modal, cerrarlo
         modal.style.display = "none";
 
-        // Remover clase "selected" cuando se cierra el modal
+        // Remover la clase "selected" de todas las canciones cuando se cierra el modal
         document.querySelectorAll(".track-header").forEach(header => {
             header.classList.remove("selected");
         });
     }
 });
+

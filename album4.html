@@ -1,136 +1,169 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Inicia el documento HTML y especifica que el idioma es español -->
 
 <head>
     <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres como UTF-8 para soportar caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MÁS - Alejandro Sanz</title>
+    <!-- Hace que la página sea responsive en dispositivos móviles -->
+
+    <title>MÁS - Alejandro Sanz</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+
+    <!-- Enlace a la biblioteca de iconos de Google Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Enlace a la hoja de estilos de Font Awesome para iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Enlace a la hoja de estilos personalizada para la página -->
     <link rel="stylesheet" href="css/estilo3.css">
 </head>
 
-<body>
-    <!-- Header con barra de navegación -->
-    <header class="header" id="Inicio">
-        <div class="header-top">
+<body> <!-- Cuerpo del documento, donde se mostrará el contenido de la página -->
+
+    <!-- HEADER con barra de navegación -->
+    <header class="header" id="Inicio"> <!-- Define la cabecera del sitio con la clase 'header' y el id 'Inicio' -->
+
+        <!-- Contenedor superior del header -->
+        <div class="header-top"> <!-- Sección superior del encabezado -->
+            <!-- Enlace que redirige a la página principal (index.html) al hacer clic en el logo -->
             <a href="#" onclick="window.location.href='index.html'; return false;">
                 <img src="img/logo2.png" alt="Alejandro Sanz">
+                <!-- Imagen del logo con su atributo de texto alternativo -->
             </a>
         </div>
-        <div class="header-bottom">
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#" onclick="window.location.href='index.html'; return false;">Inicio</a></li>
-                    <li><a href="#" onclick="window.location.href='index.html#Biografia'; return false;">Bibliografía</a></li>
+
+        <!-- Contenedor inferior del header con la barra de navegación -->
+        <div class="header-bottom"> <!-- Sección inferior del encabezado que contiene la barra de navegación -->
+            <nav class="navigation"> <!-- Etiqueta de navegación principal -->
+                <ul> <!-- Lista desordenada para los elementos del menú -->
+                    <!-- Cada elemento de la lista representa un enlace de navegación -->
+                    <li>
+                        <a href="#" onclick="window.location.href='index.html'; return false;">Inicio</a>
+                    </li>
+                    <!-- Enlace a la página de inicio -->
+                    <li><a href="#"
+                            onclick="window.location.href='index.html#Biografia'; return false;">Bibliografía</a></li>
+                    <!-- Enlace a la sección de biografía en index.html -->
                     <li><a href="#" onclick="window.location.href='album.html'; return false;">Discografía</a></li>
-                    <li><a href="#" onclick="window.location.href='galeria.html'; return false;">Galeria</a></li>
+                    <!-- Enlace a la página del álbum -->
+                    <li><a href="#" onclick="window.location.href='galeria.html'; return false;">Galería</a></li>
+                    <!-- Enlace a la galería de imágenes -->
                     <li><a href="#" onclick="window.location.href='videos.html#'; return false;">Videos</a></li>
+                    <!-- Enlace a la sección de videos -->
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <!-- Fondo de la página -->
     <div class="bg-overlay"></div>
-
-    <!-- Sección principal del álbum -->
-    <main class="album-main">
-        <div class="container album-container">
-            <!-- Encabezado del álbum (carátula + info) -->
-            <div class="album-header">
-                <div class="album-cover">
+    <!-- Fondo de la página, generalmente utilizado para agregar un efecto visual de superposición -->
+    <main class="album-main"> <!-- Sección principal que contiene la información del álbum -->
+        <div class="container album-container"> <!-- Contenedor principal para estructurar el contenido del álbum -->
+            <!-- Encabezado del álbum (carátula + información) -->
+            <div class="album-header"> <!-- Contenedor que agrupa la carátula del álbum y su información -->
+                <div class="album-cover"><!-- Sección de la carátula del álbum -->
                     <img src="img/album4.jpg" alt="Álbum Más">
+                    <!-- Imagen de la portada del álbum con su atributo de texto alternativo -->
                 </div>
+                <!-- Información del álbum (título y año de lanzamiento) -->
                 <div class="album-info">
-                    <h1>MÁS</h1>
-                    <p class="release-year">1996</p>
+                    <h1>MÁS</h1> <!-- Nombre del álbum -->
+                    <p class="release-year">1996</p> <!-- Año de lanzamiento del álbum -->
                 </div>
-            </div>
+            </div> <!-- Fin del encabezado del álbum -->
+            <!-- Lista de canciones del álbum -->
+            <div class="track-list"> <!-- Contenedor para la lista de canciones -->
 
-            <!-- Lista de canciones -->
-            <div class="track-list">
-                <!-- Track 1 -->
+                <!-- Primera canción -->
                 <div class="track cancion" data-id="1">
+                    <!-- Contenedor de una canción con atributo 'data-id' para identificación -->
+                    <!-- Encabezado de la canción con su título -->
                     <div class="track-header">
-                        <span class="track-title">01 - Y, Si Fuera Ella!</span>
+                        <span class="track-title">01 - Y, Si Fuera Ella!</span> <!-- Nombre de la primera canción -->
                     </div>
-                </div>
+                </div> <!-- Fin del contenedor de la canción -->
 
                 <!-- Track 2 -->
                 <div class="track cancion" data-id="2">
+                    <!-- Contenedor de la segunda canción con un identificador 'data-id' -->
                     <div class="track-header">
-                        <span class="track-title">02. Ese Último Momento </span>
+                        <span class="track-title">02. Ese Último Momento</span> <!-- Nombre de la segunda canción -->
                     </div>
                 </div>
 
                 <!-- Track 3 -->
-                <div class="track cancion" data-id="3">
+                <div class="track cancion" data-id="3"> <!-- Contenedor de la tercera canción -->
                     <div class="track-header">
-                        <span class="track-title">03 - Corazón Partío</span>
+                        <span class="track-title">03 - Corazón Partío</span> <!-- Nombre de la tercera canción -->
                     </div>
                 </div>
 
                 <!-- Track 4 -->
-                <div class="track cancion" data-id="4">
+                <div class="track cancion" data-id="4"> <!-- Contenedor de la cuarta canción -->
                     <div class="track-header">
-                        <span class="track-title">04 - Siempre Es de Noche</span>
+                        <span class="track-title">04 - Siempre Es de Noche</span> <!-- Nombre de la cuarta canción -->
                     </div>
                 </div>
 
                 <!-- Track 5 -->
-                <div class="track cancion" data-id="5">
+                <div class="track cancion" data-id="5"> <!-- Contenedor de la quinta canción -->
                     <div class="track-header">
-                        <span class="track-title">05 - La margarita dijo no</span>
+                        <span class="track-title">05 - La Margarita Dijo No</span> <!-- Nombre de la quinta canción -->
                     </div>
                 </div>
 
                 <!-- Track 6 -->
-                <div class="track cancion" data-id="6">
+                <div class="track cancion" data-id="6"> <!-- Contenedor de la sexta canción -->
                     <div class="track-header">
-                        <span class="track-title">06 - Hoy Que No Estás</span>
+                        <span class="track-title">06 - Hoy Que No Estás</span> <!-- Nombre de la sexta canción -->
                     </div>
                 </div>
 
                 <!-- Track 7 -->
-                <div class="track cancion" data-id="7">
+                <div class="track cancion" data-id="7"> <!-- Contenedor de la séptima canción -->
                     <div class="track-header">
                         <span class="track-title">07 - Un Charquito de Estrellas</span>
+                        <!-- Nombre de la séptima canción -->
                     </div>
                 </div>
 
                 <!-- Track 8 -->
-                <div class="track cancion" data-id="8">
+                <div class="track cancion" data-id="8"> <!-- Contenedor de la octava canción -->
                     <div class="track-header">
-                        <span class="track-title">08 - Amiga Mía</span>
+                        <span class="track-title">08 - Amiga Mía</span> <!-- Nombre de la octava canción -->
                     </div>
                 </div>
 
                 <!-- Track 9 -->
-                <div class="track cancion" data-id="9">
+                <div class="track cancion" data-id="9"> <!-- Contenedor de la novena canción -->
                     <div class="track-header">
-                        <span class="track-title">09 - Si Hay Dios...</span>
+                        <span class="track-title">09 - Si Hay Dios...</span> <!-- Nombre de la novena canción -->
                     </div>
                 </div>
 
                 <!-- Track 10 -->
-                <div class="track cancion" data-id="10">
+                <div class="track cancion" data-id="10"> <!-- Contenedor de la décima canción -->
                     <div class="track-header">
-                        <span class="track-title">10 - Aquello Que Me Diste</span>
+                        <span class="track-title">10 - Aquello Que Me Diste</span> <!-- Nombre de la décima canción -->
                     </div>
                 </div>
+
                 <!-- Puedes agregar más tracks según necesites -->
-            </div>
-        </div>
-        
-    </main>
-  
+
+            </div> <!-- Fin de la lista de canciones -->
+        </div> <!-- Fin del contenedor del álbum -->
+
+    </main> <!-- Fin de la sección principal del álbum -->
+
+
     <!-- Ventana modal -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
+    <div id="modal" class="modal"> <!-- Contenedor principal de la ventana modal -->
+        <div class="modal-content"> <!-- Contenedor del contenido de la modal -->
+            <span class="close">&times;</span> <!-- Botón para cerrar la ventana modal (símbolo de "X") -->
             <audio controls id="audio"></audio>
-            <div id="letra"></div>
+            <!-- Elemento de audio con controles, donde se cargará la canción seleccionada -->
+            <div id="letra"></div> <!-- Contenedor donde se mostrará la letra de la canción -->
         </div>
     </div>
 
@@ -145,19 +178,21 @@
             <li><a href="https://www.youtube.com/user/AlejandroSanzVEVO" target="_blank" aria-label="YouTube"><i
                         class="fab fa-youtube"></i></a></li><!-- Canal de youtube de alejandro sanz -->
             <li><a href="https://itunes.apple.com/es/artist/alejandro-sanz/id162036" target="_blank"
-                    aria-label="iTunes"><i class="fab fa-apple"></i></a></li><!-- Perfil de ittunes de apple de alejandro sanz -->
-            <li><a href="https://open.spotify.com/artist/5sUrlPAHlS9NEirDB8SEbF" target="_blank"
-                    aria-label="Spotify"><i class="fab fa-spotify"></i></a></li><!-- Perfil de spotify de alejandro sanz -->
+                    aria-label="iTunes"><i class="fab fa-apple"></i></a></li>
+            <!-- Perfil de ittunes de apple de alejandro sanz -->
+            <li><a href="https://open.spotify.com/artist/5sUrlPAHlS9NEirDB8SEbF" target="_blank" aria-label="Spotify"><i
+                        class="fab fa-spotify"></i></a></li><!-- Perfil de spotify de alejandro sanz -->
         </ul>
     </section>
-    
+
     <!-- Footer -->
     <footer>
-        <p>© 2025 - <a href="curriculum.html">Sergio Cervantes Guatemala</a></p><!-- Derechos de autor, con direccionamiento al archivo "curriculum.html" -->
+        <p>© 2025 - <a href="curriculum.html">Sergio Cervantes Guatemala</a></p>
+        <!-- Derechos de autor, con direccionamiento al archivo "curriculum.html" -->
     </footer>
 
     <!-- Archivo de JavaScript -->
-    <script src="js/letras.js"></script> <!-- Enlace al archivo de JavaScript -->
+    <script src="js/letras.js"></script> <!-- Enlace al archivo de las letras de la canción en JavaScript -->
 </body>
 
 </html>

@@ -1,83 +1,109 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Declaración del tipo de documento como HTML5 -->
+<html lang="es"> <!-- Abre el elemento HTML con el atributo "lang" establecido en español -->
+
 <head>
-  <meta charset="UTF-8">
-  <title>Galería - Alejandro Sanz</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilo4.css">
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres para el documento (UTF-8) -->
+    <title>Galería - Alejandro Sanz</title>
+    <!-- Establece el título de la página que se muestra en la pestaña del navegador -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura que la página se vea correctamente en dispositivos móviles, ajustando el ancho a la pantalla del dispositivo -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Enlaza la librería de iconos Material Icons desde Google Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Enlaza la librería de iconos Font Awesome desde un CDN externo -->
+    <link rel="stylesheet" href="css/estilo4.css">
+    <!-- Enlaza un archivo CSS local llamado "estilo4.css" para aplicar estilos personalizados -->
 </head>
+
 <body>
+    <!-- Abre la etiqueta del cuerpo del documento -->
     <header class="header" id="Inicio">
+        <!-- Abre la sección de encabezado con una clase "header" y un ID "Inicio" -->
         <div class="header-top">
+            <!-- Contenedor para la parte superior del encabezado -->
             <a href="#" onclick="window.location.href='index.html'; return false;">
+                <!-- Enlace que redirige a la página "index.html" cuando se hace clic -->
                 <img src="img/logo2.png" alt="Alejandro Sanz">
+                <!-- Muestra el logo de Alejandro Sanz, que está almacenado en "img/logo2.png" -->
             </a>
         </div>
-        <div class="header-bottom">
-            <nav class="navigation">
-                <ul>
+        <div class="header-bottom"> <!-- Contenedor para la parte inferior del encabezado -->
+            <nav class="navigation"> <!-- Elemento de navegación para los enlaces del menú -->
+                <ul> <!-- Lista desordenada que contiene los elementos del menú -->
                     <li><a href="#" onclick="window.location.href='index.html'; return false;">Inicio</a></li>
-                    <li><a href="#" onclick="window.location.href='index.html#Biografia'; return false;">Bibliografía</a></li>
+                    <!-- Enlace que redirige a "index.html" y muestra "Inicio" en el menú -->
+                    <li><a href="#"
+                            onclick="window.location.href='index.html#Biografia'; return false;">Bibliografía</a></li>
+                    <!-- Enlace que redirige a la sección "Biografía" dentro de "index.html" -->
                     <li><a href="#" onclick="window.location.href='album.html'; return false;">Discografía</a></li>
+                    <!-- Enlace que redirige a "album.html" para mostrar la discografía -->
                     <li><a href="#" onclick="window.location.href='videos.html#'; return false;">Videos</a></li>
+                    <!-- Enlace que redirige a "videos.html" para mostrar videos -->
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> <!-- Cierra el encabezado -->
 
-    <main>
+    <main> <!-- Abre la sección principal de la página -->
 
-    <section class="fotos">
-        <div class="galeria">
-            <img src="img/Galeria/img1.jpg" alt="Foto 1" class="imagen-galeria">
-            <img src="img/Galeria/img2.jpg" alt="Foto 2" class="imagen-galeria">
-            <img src="img/Galeria/img3.jpg" alt="Foto 3" class="imagen-galeria">
-            <img src="img/Galeria/img4.jpg" alt="Foto 4" class="imagen-galeria">
-            <img src="img/Galeria/img5.jpg" alt="Foto 5" class="imagen-galeria">
-            <img src="img/Galeria/img6.jpg" alt="Foto 6" class="imagen-galeria">
-            <img src="img/Galeria/img7.jpg" alt="Foto 7" class="imagen-galeria">
-            <img src="img/Galeria/img8.jpg" alt="Foto 8" class="imagen-galeria">
-            <img src="img/Galeria/img9.jpg" alt="Foto 9" class="imagen-galeria">
-            <img src="img/Galeria/img10.jpg" alt="Foto 9" class="imagen-galeria">
-            <img src="img/Galeria/img11.jpg" alt="Foto 9" class="imagen-galeria">
-            <img src="img/Galeria/img12.jpg" alt="Foto 9" class="imagen-galeria">
-        </div>
-    </section>
-    
-    <!-- Modal de imagen -->
-    <div id="modal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modal-img">
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
-    </div>
+        <section class="fotos">
+            <!-- Sección con clase "fotos", probablemente destinada a mostrar las fotos de la galería -->
+            <div class="galeria"> <!-- Contenedor con clase "galeria", donde se colocarán las imágenes -->
+                <img src="img/Galeria/img1.jpg" alt="Foto 1" class="imagen-galeria">
+                <!-- Imagen 1 de la galería, con ruta "img/Galeria/img1.jpg", alt="Foto 1" y clase "imagen-galeria" -->
+                <img src="img/Galeria/img2.jpg" alt="Foto 2" class="imagen-galeria"> <!-- Imagen 2 de la galería -->
+                <img src="img/Galeria/img3.jpg" alt="Foto 3" class="imagen-galeria"> <!-- Imagen 3 de la galería -->
+                <img src="img/Galeria/img4.jpg" alt="Foto 4" class="imagen-galeria"> <!-- Imagen 4 de la galería -->
+                <img src="img/Galeria/img5.jpg" alt="Foto 5" class="imagen-galeria"> <!-- Imagen 5 de la galería -->
+                <img src="img/Galeria/img6.jpg" alt="Foto 6" class="imagen-galeria"> <!-- Imagen 6 de la galería -->
+                <img src="img/Galeria/img7.jpg" alt="Foto 7" class="imagen-galeria"> <!-- Imagen 7 de la galería -->
+                <img src="img/Galeria/img8.jpg" alt="Foto 8" class="imagen-galeria"> <!-- Imagen 8 de la galería -->
+                <img src="img/Galeria/img9.jpg" alt="Foto 9" class="imagen-galeria"> <!-- Imagen 9 de la galería -->
+                <img src="img/Galeria/img10.jpg" alt="Foto 9" class="imagen-galeria"> <!-- Imagen 10 de la galería -->
+                <img src="img/Galeria/img11.jpg" alt="Foto 9" class="imagen-galeria"> <!-- Imagen 11 de la galería -->
+                <img src="img/Galeria/img12.jpg" alt="Foto 9" class="imagen-galeria"> <!-- Imagen 12 de la galería -->
+            </div>
+        </section> <!-- Cierra la sección de fotos -->
 
-    <section class="social-media">
-        <ul>
-            <li><a href="https://www.facebook.com/ASanzOficial" target="_blank" aria-label="Facebook"><i
-                        class="fab fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/alejandrosanz" target="_blank" aria-label="Twitter"><i
-                        class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/alejandrosanz/" target="_blank" aria-label="Instagram"><i
-                        class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.youtube.com/user/AlejandroSanzVEVO" target="_blank" aria-label="YouTube"><i
-                        class="fab fa-youtube"></i></a></li>
-            <li><a href="https://itunes.apple.com/es/artist/alejandro-sanz/id162036" target="_blank"
-                    aria-label="iTunes"><i class="fab fa-apple"></i></a></li>
-            <li><a href="https://open.spotify.com/artist/5sUrlPAHlS9NEirDB8SEbF" target="_blank"
-                    aria-label="Spotify"><i class="fab fa-spotify"></i></a></li>
-        </ul>
-    </section>
+        <!-- Modal de imagen -->
+        <div id="modal" class="modal"> <!-- Contenedor del modal de imagen con ID "modal" y clase "modal" -->
+            <span class="close">&times;</span> <!-- Botón para cerrar el modal (ícono de "X") -->
+            <img class="modal-content" id="modal-img"> <!-- Imagen que se mostrará dentro del modal -->
+            <a class="prev">&#10094;</a> <!-- Enlace para mostrar la imagen anterior en el modal -->
+            <a class="next">&#10095;</a> <!-- Enlace para mostrar la imagen siguiente en el modal -->
+        </div> <!-- Cierra el modal de imagen -->
 
-    </main>
+        <section class="social-media">  <!-- Abre una sección con clase "social-media", destinada a contener enlaces a redes sociales -->
+            <ul>    <!-- Abre una lista desordenada para los elementos de las redes sociales -->
+                <li><a href="https://www.facebook.com/ASanzOficial" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook"></i></a></li>
+                <!-- Enlace a la página de Facebook de Alejandro Sanz. Usa el ícono de Facebook (Font Awesome) y abre el enlace en una nueva pestaña. aria-label proporciona un texto alternativo para accesibilidad -->
+                <li><a href="https://twitter.com/alejandrosanz" target="_blank" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a></li>
+                <!-- Enlace a la página de Twitter de Alejandro Sanz. Usa el ícono de Twitter (Font Awesome) -->
+                <li><a href="https://www.instagram.com/alejandrosanz/" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a></li>
+                <!-- Enlace a la página de Instagram de Alejandro Sanz. Usa el ícono de Instagram (Font Awesome) -->
+                <li><a href="https://www.youtube.com/user/AlejandroSanzVEVO" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a></li>
+                <!-- Enlace al canal de YouTube de Alejandro Sanz. Usa el ícono de YouTube (Font Awesome) -->
+                <li><a href="https://itunes.apple.com/es/artist/alejandro-sanz/id162036" target="_blank"
+                        aria-label="iTunes"><i class="fab fa-apple"></i></a></li>
+                <!-- Enlace a la página de iTunes de Alejandro Sanz. Usa el ícono de Apple (Font Awesome) -->
+                <li><a href="https://open.spotify.com/artist/5sUrlPAHlS9NEirDB8SEbF" target="_blank"
+                        aria-label="Spotify"><i class="fab fa-spotify"></i></a></li>
+                <!-- Enlace a la página de Spotify de Alejandro Sanz. Usa el ícono de Spotify (Font Awesome) -->
+            </ul>
+        </section>   <!-- Cierra la sección de redes sociales -->
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 - <a href="curriculum.html">Sergio Cervantes Guatemala</a></p>
-</footer>
+    </main>  <!-- Cierra el elemento main -->
 
-<script src="js/galeria.js"></script>
+    <!-- Footer -->
+    <footer>      <!-- Abre el pie de página -->
+        <p>© 2025 - <a href="curriculum.html">Sergio Cervantes Guatemala</a></p>
+        <!-- Texto de derechos de autor, con un enlace a "curriculum.html" que probablemente contiene el currículum de Sergio Cervantes -->
+    </footer>  <!-- Cierra el pie de página -->
+
+    <script src="js/galeria.js"></script>   <!-- Enlaza un archivo JavaScript llamado "galeria.js", probablemente para la funcionalidad de la galería de imágenes -->
 </body>
 </html>

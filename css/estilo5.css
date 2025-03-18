@@ -1,249 +1,261 @@
+/* Establece el color de fondo del cuerpo, el margen y la fuente */
 body {
-    background-color: rgb(125, 122, 122);
-    margin: 10px auto;
-    width: 70%;
-    font-family: "Roboto";
+    background-color: rgb(125, 122, 122); /* Color de fondo gris */
+    margin: 10px auto; /* Margen superior e inferior de 10px y centrado horizontal */
+    width: 70%; /* Ancho del cuerpo al 70% del contenedor padre */
+    font-family: "Roboto"; /* Fuente del texto */
 }
 
+/* Media query para dispositivos con ancho máximo de 768px */
 @media (max-width: 768px) {
     body {
-        width: 100%;
-        margin: 0 auto;
+        width: 100%; /* Ancho del cuerpo al 100% */
+        margin: 0 auto; /* Centrar el contenido */
     }
 }
 
 /* HEADER */
+/* Estilos para el encabezado */
 header {
-    width: 100%;
-    overflow: hidden;
-    background-color: #ececec;
-    margin-bottom: 0px;
-    padding: 0px;
-    border-radius: 25px 25px 0px 0px;
-    border-style: none;
+    width: 100%; /* Ancho completo */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+    background-color: #ececec; /* Color de fondo gris claro */
+    margin-bottom: 0px; /* Sin margen inferior */
+    padding: 0px; /* Sin relleno */
+    border-radius: 25px 25px 0px 0px; /* Bordes redondeados en la parte superior */
+    border-style: none; /* Sin borde */
 }
 
+/* Ajuste para dispositivos móviles */
 @media (max-width: 768px) {
     header {
-        border-radius: 0px;
+        border-radius: 0px; /* Elimina los bordes redondeados en móviles */
     }
 }
 
 /* HEADER - TITULOS */
+/* Estilos para los títulos dentro del encabezado */
 header > div > h1, h2 {
-    font-family: "Roboto";
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px 20px 0px 70px;
+    font-family: "Roboto"; /* Fuente del texto */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centra el texto */
+    margin: 20px 20px 0px 70px; /* Márgenes para espaciar el título */
 }
 
 /* HEADER - PARRAFO */
+/* Estilos para los párrafos dentro del encabezado */
 header > div > p {
-    font-family: "Roboto";
-    text-align: center;
-    margin: auto;
-    font-size: 14px;
-    margin: 0px 20px 0px 70px;
-    line-height: 1.5;
+    font-family: "Roboto"; /* Fuente del texto */
+    text-align: center; /* Centra el texto */
+    margin: auto; /* Centrado automático */
+    font-size: 14px; /* Tamaño del texto */
+    margin: 0px 20px 0px 70px; /* Márgenes para espaciar el párrafo */
+    line-height: 1.5; /* Espaciado entre líneas */
 }
 
 /* CONTENEDORES IZQUIERDA Y DERECHA */
+/* Contenedor izquierdo */
 .divizq {
-    float: left;
-    width: 20%;
-    align-content: center;
+    float: left; /* Alineación a la izquierda */
+    width: 20%; /* Ancho del 20% */
+    align-content: center; /* Alineación centrada del contenido */
 }
 
+/* Contenedor derecho */
 .divder {
-    float: right;
-    width: 70%;
-    text-align: center;
-    align-content: center;
-    margin: auto;
+    float: right; /* Alineación a la derecha */
+    width: 70%; /* Ancho del 70% */
+    text-align: center; /* Centra el texto */
+    align-content: center; /* Alineación centrada del contenido */
+    margin: auto; /* Centrado automático */
 }
 
+/* Tamaño de fuente en el contenedor derecho */
 .divder p {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Ajusta el tamaño del texto */
 }
 
+/* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
     .divizq, .divder {
-        width: 100%;
-        float: none;
-        text-align: center;
-        font-size: .8rem;
+        width: 100%; /* Ambos contenedores ocupan el 100% */
+        float: none; /* Elimina la flotación */
+        text-align: center; /* Centra el contenido */
+        font-size: .8rem; /* Reduce el tamaño del texto */
     }
 }
 
 /* IMAGEN IZQUIERDA */
+/* Estilos para la imagen alineada a la izquierda */
 .imgizq {
-    float: left;
-    width: 290px;
-    height: 300px;
+    float: left; /* Alineación a la izquierda */
+    width: 290px; /* Ancho de la imagen */
+    height: 300px; /* Altura de la imagen */
 }
 
+/* Ajuste de la imagen en dispositivos móviles */
 @media (max-width: 768px) {
     .imgizq {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
+        width: 100%; /* Ancho completo */
+        height: auto; /* Altura automática */
+        display: block; /* Se comporta como un bloque */
+        margin: auto; /* Centrado automático */
     }
 }
 
 /* ASIDE - A LA IZQUIERDA */
 aside {
-    float: left;
-    width: 35%;
-    text-align: justify;
-    margin-top: 0px;
-    background-color: #ececec;
-    height: 800px;
+    float: left; /* Hace que el aside se posicione a la izquierda del contenedor */
+    width: 35%; /* Define el ancho del aside al 35% del contenedor padre */
+    text-align: justify; /* Justifica el texto dentro del aside */
+    margin-top: 0px; /* No agrega margen en la parte superior */
+    background-color: #ececec; /* Establece un color de fondo gris claro */
+    height: 800px; /* Fija la altura del aside en 800 píxeles */
 }
 
 @media (max-width: 768px) {
     aside {
-        width: 100%;
-        float: none;
-        display: block;
-        height: auto;
+        width: 100%; /* En pantallas pequeñas, el aside ocupa todo el ancho disponible */
+        float: none; /* Elimina el float para que se comporte como un bloque normal */
+        display: block; /* Asegura que el aside sea un bloque */
+        height: auto; /* Permite que la altura se ajuste automáticamente al contenido */
     }
 }
 
 /* SECTION - A LA DERECHA */
 section {
-    float: right;
-    width: 65%;
-    text-align: justify;
-    background-color: #fff;
-    margin-top: 0px;
+    float: right; /* Posiciona la sección a la derecha del contenedor */
+    width: 65%; /* Define el ancho de la sección al 65% del contenedor padre */
+    text-align: justify; /* Justifica el texto dentro de la sección */
+    background-color: #fff; /* Establece un fondo blanco */
+    margin-top: 0px; /* No agrega margen superior */
 }
 
 @media (max-width: 768px) {
     section {
-        width: 100%;
-        float: none;
-        display: block;
-        height: auto;
+        width: 100%; /* En pantallas pequeñas, la sección ocupa todo el ancho */
+        float: none; /* Elimina el float para que sea un bloque normal */
+        display: block; /* Asegura que la sección sea un bloque */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
     }
 }
 
 /* ARTICLE */
 article {
-    margin-bottom: 5px;
-    padding: 10px;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 0px;
-    background-color: #fff;
+    margin-bottom: 5px; /* Agrega un margen inferior de 5 píxeles */
+    padding: 10px; /* Añade un relleno interno de 10 píxeles */
+    border-radius: 10px; /* Aplica bordes redondeados de 10 píxeles */
+    border-style: solid; /* Define un borde sólido */
+    border-width: 0px; /* Inicialmente sin grosor de borde */
+    background-color: #fff; /* Fondo blanco para el artículo */
 }
 
 @media (max-width: 768px) {
     article {
-        width: 90%;
-        display: block;
+        width: 90%; /* Reduce el ancho del artículo al 90% del contenedor */
+        display: block; /* Asegura que sea un bloque */
     }
     article li {
-        font-size: .9rem;
+        font-size: .9rem; /* Reduce el tamaño de fuente de los elementos de lista */
     }
 }
 
 /* BLOCKQUOTE */
 blockquote {
-    margin-bottom: 5px;
-    padding: 10px;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #ececec;
-    background-color: #ececec;
-    height: 708px;
+    margin-bottom: 5px; /* Agrega margen inferior de 5 píxeles */
+    padding: 10px; /* Agrega relleno de 10 píxeles */
+    border-radius: 10px; /* Aplica bordes redondeados de 10 píxeles */
+    border-style: solid; /* Define un borde sólido */
+    border-width: 2px; /* Grosor del borde de 2 píxeles */
+    border-color: #ececec; /* Color del borde gris claro */
+    background-color: #ececec; /* Fondo gris claro */
+    height: 708px; /* Altura fija de 708 píxeles */
 }
 
 @media (max-width: 768px) {
     blockquote {
-        width: 80%;
-        height: auto;
-        font-size: .9rem;
+        width: 80%; /* Reduce el ancho al 80% del contenedor */
+        height: auto; /* Ajusta la altura automáticamente */
+        font-size: .9rem; /* Reduce el tamaño de fuente */
     }
 }
 
 /* FOOTER */
 footer {
-    width: 100%;
-    overflow: hidden;
-    background-color: #ececec;
-    padding: 0px;
-    border-radius: 0px 0px 15px 15px;
-    border-style: none;
-    text-align: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    overflow: hidden; /* Oculta cualquier contenido desbordante */
+    background-color: #ececec; /* Color de fondo gris claro */
+    padding: 0px; /* Sin relleno interno */
+    border-radius: 0px 0px 15px 15px; /* Bordes redondeados solo en la parte inferior */
+    border-style: none; /* Sin bordes */
+    text-align: center; /* Centra el contenido del footer */
 }
 
 @media (max-width: 768px) {
     footer {
-        border-radius: 0px;
-        align-content: center;   
+        border-radius: 0px; /* Elimina los bordes redondeados en pantallas pequeñas */
+        align-content: center; /* Centra el contenido */
     }
 }
 
 /* ICONOS */
 .icon {
-    width: 14px;
-    height: 14px;
-    padding: 8px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 100%;
-    float: left;
-    margin-right: 10px;
-    vertical-align: middle;
+    width: 14px; /* Define el ancho de los iconos */
+    height: 14px; /* Define la altura de los iconos */
+    padding: 8px; /* Agrega relleno interno */
+    background-color: rgb(255, 255, 255); /* Color de fondo blanco */
+    border-radius: 100%; /* Hace que los iconos sean circulares */
+    float: left; /* Alinea los iconos a la izquierda */
+    margin-right: 10px; /* Agrega margen derecho para separación */
+    vertical-align: middle; /* Alinea verticalmente al centro */
 }
 
 .iconedit {
-    float: center;
-    display: inline-flex;
-    width: 35px;
-    height: 35px;
-    padding: 10px;
-    background-color: rgb(245, 245, 245);
-    border-radius: 100%;
-    margin-right: 10px;
-    transition: transform 0.3s ease;
+    float: center; /* Alineación central (no válida, debería ser 'none' o 'inline') */
+    display: inline-flex; /* Permite alineación flexible en línea */
+    width: 35px; /* Ancho del icono edit */
+    height: 35px; /* Altura del icono edit */
+    padding: 10px; /* Relleno interno */
+    background-color: rgb(245, 245, 245); /* Fondo gris claro */
+    border-radius: 100%; /* Hace que el icono sea circular */
+    margin-right: 10px; /* Agrega margen derecho */
+    transition: transform 0.3s ease; /* Agrega una transición suave en hover */
 }
 
 .iconedit:hover {
-    transform: scale(1.2) translateY(-5px);
+    transform: scale(1.2) translateY(-5px); /* Escala y eleva el icono en hover */
 }
 
 @media (max-width: 768px) {
     .icon, .iconedit {
-        width: 14px;
+        width: 14px; /* Reduce el tamaño de los iconos */
         height: 14px;
-        margin: auto;
+        margin: auto; /* Centra los iconos */
     }
 }
 
 /* CONTENEDOR */
 .contenedor {
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.67);
-    border-radius: 2em;
-    box-shadow: 0px 5px 3px rgba(0,0,0, .4);
+    padding: 10px 20px; /* Agrega relleno superior e inferior de 10px y lateral de 20px */
+    background: rgba(255, 255, 255, 0.67); /* Fondo blanco semi-transparente */
+    border-radius: 2em; /* Bordes redondeados */
+    box-shadow: 0px 5px 3px rgba(0,0,0, .4); /* Sombra sutil */
 }
 
 @media (max-width: 768px) {
     .contenedor {
-        width: 95%;
-        padding: 10px;
+        width: 95%; /* Reduce el ancho al 95% en pantallas pequeñas */
+        padding: 10px; /* Reduce el padding */
     }
 }
 
 .volver-atras button {
-    background-color: #c9484d;
-    color: #FEFCFB;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    cursor: pointer;
+    background-color: #c9484d; /* Color de fondo rojo */
+    color: #FEFCFB; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Bordes redondeados */
+    padding: 10px 20px; /* Relleno interno */
+    cursor: pointer; /* Cursor de puntero al pasar */
 }
