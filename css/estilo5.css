@@ -75,6 +75,7 @@ header > div > p {
 /* Tamaño de fuente en el contenedor derecho */
 .divder p {
     font-size: 1.5rem; /* Ajusta el tamaño del texto */
+    font-family: "Reboto";
 }
 
 /* Ajustes para dispositivos móviles */
@@ -105,6 +106,24 @@ header > div > p {
     }
 }
 
+li
+{
+font-family: "Roboto";
+text-align: justify;
+margin: auto;
+size: 10px;
+line-height: 2;
+}
+
+.listaside
+{
+font-family: "Roboto";
+text-align: justify;
+margin: auto;
+size: 10px;
+line-height: 1;
+}
+
 /* ASIDE - A LA IZQUIERDA */
 aside {
     float: left; /* Hace que el aside se posicione a la izquierda del contenedor */
@@ -113,6 +132,7 @@ aside {
     margin-top: 0px; /* No agrega margen en la parte superior */
     background-color: #ececec; /* Establece un color de fondo gris claro */
     height: 800px; /* Fija la altura del aside en 800 píxeles */
+    font-family: "Roboto";
 }
 
 @media (max-width: 768px) {
