@@ -112,7 +112,7 @@ aside {
     text-align: justify; /* Justifica el texto dentro del aside */
     margin-top: 0px; /* No agrega margen en la parte superior */
     background-color: #ececec; /* Establece un color de fondo gris claro */
-    height: 773.5px; /* Fija la altura del aside en 800 píxeles */
+    height: 820px; /* Fija la altura del aside en 800 píxeles */
     font-family: "Arial";
 }
 
@@ -132,6 +132,7 @@ section {
     text-align: justify; /* Justifica el texto dentro de la sección */
     background-color: #fff; /* Establece un fondo blanco */
     margin-top: 0px; /* No agrega margen superior */
+    height: 820px;
     font-family: "Arial";
 }
 
