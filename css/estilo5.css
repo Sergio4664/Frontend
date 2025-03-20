@@ -112,8 +112,8 @@ aside {
     text-align: justify; /* Justifica el texto dentro del aside */
     margin-top: 0px; /* No agrega margen en la parte superior */
     background-color: #ececec; /* Establece un color de fondo gris claro */
-    height: 820px; /* Fija la altura del aside en 800 píxeles */
-    font-family: "Arial";
+    height: 820px; /* Fija la altura del aside en 820 píxeles */
+    font-family: "Arial";/* Fija la altura del aside en 820 píxeles */
 }
 
 @media (max-width: 768px) {
@@ -132,8 +132,8 @@ section {
     text-align: justify; /* Justifica el texto dentro de la sección */
     background-color: #fff; /* Establece un fondo blanco */
     margin-top: 0px; /* No agrega margen superior */
-    height: 820px;
-    font-family: "Arial";
+    height: 820px;/* Fija la altura del aside en 820 píxeles */
+    font-family: "Arial";/*tipo de letra*/
 }
 
 @media (max-width: 768px) {
